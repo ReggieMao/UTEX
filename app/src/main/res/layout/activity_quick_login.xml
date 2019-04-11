@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+    tools:context=".mvp.user.view.QuickLoginActivity">
+
+    <TextView
+        android:id="@+id/tv_quick_login_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y48"
+        android:text="@string/she_zhi_zhi_wen_kaui_su_deng_lu"
+        android:textColor="@color/b333333_b2ffffff"
+        android:textSize="@dimen/x20_5" />
+
+    <TextView
+        android:id="@+id/tv_quick_login_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x13"
+        android:paddingBottom="@dimen/x10"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x10"
+        android:text="@string/tiao_guo"
+        android:textColor="@color/b999999_66ffffff"
+        android:textSize="@dimen/x12" />
+
+    <TextView
+        android:id="@+id/tv_quinck_login_click_set_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_quick_login_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y4"
+        android:text="@string/dian_ji_zhi_wen_tu_an_jin_xing_she_zhi"
+        android:textColor="@color/b999999_66ffffff"
+        android:textSize="@dimen/x12" />
+
+    <com.github.ihsg.patternlocker.PatternLockerView
+        android:id="@+id/pv_quick_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_quinck_login_click_set_label"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/y22" />
+
+    <TextView
+        android:id="@+id/tv_zhi_wen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_quinck_login_click_set_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y71_5"
+        android:drawableTop="@drawable/login_pic_touchid"
+        android:gravity="center"
+        android:text="@string/Touch_ID"
+        android:textColor="@color/f398155" />
+
+    <TextView
+        android:id="@+id/tv_look_other_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y51_5"
+        android:text="@string/qie_huan_cheng_zhi_wen_jie_suo"
+        android:textColor="@color/f398155" />
+
+    <CheckBox
+        android:id="@+id/cb_quick_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y18"
+        android:button="@null"
+        android:drawableLeft="@drawable/tv_asset_selector"
+        android:drawablePadding="@dimen/x5"
+        android:text="@string/bu_zai_ti_shi_ci_ye_mian"
+        android:textColor="@color/b999999_66ffffff"
+        android:textSize="@dimen/x10" />
+
+
+</RelativeLayout>

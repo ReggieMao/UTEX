@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+    tools:context=".mvp.mine.view.LoginValidationSettingActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/be3e6e4_29ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/rl_login_validation_1_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y34"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <TextView
+            android:id="@+id/tv_login_validation_1_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/icon_more"
+            android:text="@string/gu_ge_shen_fen_yan_zheng"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_login_validation_1_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x14"
+            android:text="@string/wei_kai_qi"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x13" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/be3e6e4_29ffffff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_login_validation_2_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y34"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <TextView
+            android:id="@+id/tv_login_validation_2_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/zhi_wen_deng_lu"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x13" />
+
+        <com.utex.widget.button.switchbutton.FSwitchButton
+            android:id="@+id/fb_login_validation_fingerprint"
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/y18"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"></com.utex.widget.button.switchbutton.FSwitchButton>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/be3e6e4_29ffffff" />
+
+    </RelativeLayout>
+
+</LinearLayout>

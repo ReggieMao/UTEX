@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_order_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <com.utex.widget.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.utex.widget.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_order_bach_cannel_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/y9"
+        android:layout_marginRight="@dimen/x13"
+        android:background="@drawable/shape_order_batch_withdrawal"
+        android:drawableTop="@drawable/my_icon_undo"
+        android:gravity="center"
+        android:paddingBottom="@dimen/y3"
+        android:paddingTop="@dimen/y4"
+        android:text="@string/pi_liang_che_dan"
+        android:textColor="@color/bffffff_13151a"
+        android:textSize="@dimen/x7_5" />
+
+    <LinearLayout
+        android:id="@+id/ll_page_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_none_zwjl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_marginBottom="@dimen/y8"
+            android:text="@string/zan_wu_xiang_guan_ji_lu"
+            android:textColor="@color/bc8ccc9_33ffffff"
+            android:textSize="@dimen/x12" />
+
+    </LinearLayout>
+
+    <include layout="@layout/view_mine_order_filter"></include>
+
+    <include layout="@layout/view_mine_money_filter"></include>
+
+
+</RelativeLayout>

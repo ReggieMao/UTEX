@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+    tools:context=".mvp.user.view.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_user_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:src="@drawable/nav_icon_back" />
+
+        <TextView
+            android:id="@+id/tv_user_go_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginRight="@dimen/x13"
+            android:textSize="@dimen/x13_5" />
+
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rn_user_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x25_5"
+        android:layout_marginTop="@dimen/y25"
+        android:layout_marginRight="@dimen/x25_5"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_register_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/rb_user_tab_selector"
+            android:button="@null"
+            android:checked="true"
+            android:text="@string/shou_ji_hao_zhu_ce"
+            android:textColor="@drawable/rv_user_tab_text_color_selector"
+            android:textSize="@dimen/x15_5"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rb_register_email"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/x25_5"
+            android:background="@drawable/rb_user_tab_selector"
+            android:button="@null"
+            android:drawableBottom="@drawable/rb_user_tab_selector"
+            android:text="@string/you_xiang_zhu_ce"
+            android:textColor="@drawable/rv_user_tab_text_color_selector"
+            android:textSize="@dimen/x15_5"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_register_body_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x25_5"
+        android:layout_marginTop="@dimen/y36"
+        android:layout_marginRight="@dimen/x25_5">
+
+    </FrameLayout>
+
+</LinearLayout>

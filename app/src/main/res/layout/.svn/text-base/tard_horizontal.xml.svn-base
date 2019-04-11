@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y241_5"
+        android:layout_weight="1"
+        android:background="@color/bffffff_13151a"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_trade_depth_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x13"
+                    android:text="@string/pan_kou"
+                    android:textColor="@color/bafb3b0_42ffffff"
+                    android:textSize="@dimen/x10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/jia_ge"
+                    android:textColor="@color/bafb3b0_42ffffff"
+                    android:textSize="@dimen/x10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x5"
+                    android:text="@string/shu_liang"
+                    android:textColor="@color/bafb3b0_42ffffff"
+                    android:textSize="@dimen/x10" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_tard_sell_handicap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y83"
+                android:layout_marginTop="@dimen/y6">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_trad_horizonntal_price"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x13"
+                    android:textColor="@color/f50b577"
+                    android:textSize="@dimen/x15_5" />
+
+                <TextView
+                    android:id="@+id/tv_trad_horizonntal_platform"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x7"
+                    android:textColor="@color/bafb3b0_42ffffff"
+                    android:textSize="@dimen/x8_5" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_tard_buy_handicap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y83"
+                android:layout_marginTop="@dimen/y5">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_trade_vol_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x13"
+                    android:text="@string/shi_jian"
+                    android:textColor="@color/bafb3b0_42ffffff"
+                    android:textSize="@dimen/x10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x50_5"
+                    android:text="@string/jia_ge"
+                    android:textColor="@color/bafb3b0_42ffffff"
+                    android:textSize="@dimen/x10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x13"
+                    android:text="@string/shu_liang"
+                    android:textColor="@color/bafb3b0_42ffffff"
+                    android:textSize="@dimen/x10" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_trade_vol_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/y4"
+                android:layout_weight="1">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y5">
+
+            <com.utex.widget.button.TradSwitchButton
+                android:id="@+id/sb_trad_horizontal_switch"
+                android:layout_width="@dimen/x83_5"
+                android:layout_height="@dimen/y14_5"
+                android:layout_marginLeft="@dimen/x13_5" />
+
+            <TextView
+                android:id="@+id/tv_trad_horizonntal_depth_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="@dimen/x3_5"
+                android:drawableRight="@drawable/transaction_icon_down"
+                android:text="@string/shen_du"
+                android:textColor="@color/bafb3b0_42ffffff"
+                android:textSize="@dimen/x12" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y241_5"
+        android:layout_weight="1"
+        android:background="@color/bffffff_13151a"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/y6"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <RadioGroup
+            android:id="@+id/rg_trad_horizontal_direction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y19_5"
+            android:layout_marginTop="@dimen/y12"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rg_trad_horizontal_direction_buy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/trad_buy_sell_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/buy"
+                android:textColor="@drawable/trad_buy_sell_text_color"
+                android:textSize="@dimen/x13" />
+
+            <RadioButton
+                android:id="@+id/rg_trad_horizontal_direction_sell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/trad_sell_sell_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/sell"
+                android:textColor="@drawable/trad_buy_sell_text_color"
+                android:textSize="@dimen/x13" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_trad_horizontal_operation_direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rg_trad_horizontal_operation_direction_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/rb_trad_horizontal_selector"
+                android:drawablePadding="@dimen/x5"
+                android:text="@string/xian_jia"
+                android:textColor="@color/b333333_ffffff"
+                android:textSize="@dimen/x12" />
+
+            <RadioButton
+                android:id="@+id/rg_trad_horizontal_operation_direction_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/rb_trad_horizontal_selector"
+                android:drawablePadding="@dimen/x5"
+                android:text="@string/shi_jia"
+                android:textColor="@color/b333333_ffffff"
+                android:textSize="@dimen/x12" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_trad_horizontal_operation_direction_2_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y24"
+            android:layout_marginTop="@dimen/y11"
+            android:background="@drawable/shape_trad_horizontal_operation_direction_2_bg"
+            android:gravity="center"
+            android:text="@string/yi_dang_qian_zui_you_jia_ge_jiao_yi"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x12"
+            android:visibility="gone" />
+
+        <com.utex.widget.SnappingStepper
+            android:id="@+id/ss_trad_horizontal_add_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y11">
+
+        </com.utex.widget.SnappingStepper>
+
+        <TextView
+            android:id="@+id/tv_trad_horizontal_plaftfrom_price"
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y2_5"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x8_5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y24"
+            android:layout_marginTop="@dimen/y7"
+            android:background="@drawable/car_number_add_sub_bg"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_trad_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/shu_liang"
+                android:inputType="numberDecimal"
+                android:paddingLeft="@dimen/x5"
+                android:textColor="@color/b333333_ffffff"
+                android:textColorHint="@color/bafb3b0_42ffffff"
+                android:textSize="@dimen/x12" />
+
+            <TextView
+                android:id="@+id/tv_trad_amount_coin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/x5"
+                android:text="@string/shu_liang"
+                android:textColor="@color/bafb3b0_42ffffff"
+                android:textSize="@dimen/x12" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_trad_horizontal_available_fund"
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y5"
+            android:singleLine="true"
+            android:text="可用100GZH"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x10_5" />
+
+        <com.utex.widget.bar.BubbleSeekBar
+            android:id="@+id/bsb_trad_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y18"
+            app:bsb_bubble_color="@color/f50b577"
+            app:bsb_bubble_text_color="@color/be3e6e4_29ffffff"
+            app:bsb_max="1000"
+            app:bsb_min="0"
+            app:bsb_second_track_color="@color/f50b577"
+            app:bsb_section_count="4"
+            app:bsb_section_text_color="@color/bafb3b0_42ffffff"
+            app:bsb_section_text_position="bottom_sides"
+            app:bsb_section_text_size="10sp"
+            app:bsb_show_section_mark="true"
+            app:bsb_show_section_text="true"
+            app:bsb_thumb_radius="@dimen/x5"
+            app:bsb_thumb_radius_on_dragging="@dimen/x6"
+            app:bsb_track_color="@color/be3e6e4_29ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_horizontal_total_price_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jiao_yi_zong_e"
+                android:textColor="@color/b999999_66ffffff"
+                android:textSize="@dimen/x13_5" />
+
+            <TextView
+                android:id="@+id/tv_trad_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/x6"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="0gzh"
+                android:textColor="@color/b333333_e6ffffff"
+                android:textSize="@dimen/x12" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_trad_horizontal_btn"
+            style="@style/textBold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y24"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y5"
+            android:background="@color/f50b577"
+            android:gravity="center"
+            android:text="@string/sell"
+            android:textColor="@color/fffffff"
+            android:textSize="@dimen/x13_5" />
+
+    </LinearLayout>
+
+</LinearLayout>

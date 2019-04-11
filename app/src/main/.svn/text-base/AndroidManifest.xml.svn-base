@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.utex">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.exnow.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <application
+        android:name="com.utex.core.UTEXApplication"
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/ExAppTheme">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5c233e33f1f5561c9c000187" /> <!-- 友盟相关值 已替换 -->
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=100560099" />
+
+        <!-- 其他应用商店的名字 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="UTEX_Official" />
+
+        <activity
+            android:name="com.utex.mvp.splash.view.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.utex.service.TickerSocketService"
+            android:exported="true"
+            android:process=":remote" />
+        <service
+            android:name="com.utex.service.OrderSocketService"
+            android:exported="true"
+            android:process=":remote" />
+        <service
+            android:name="com.utex.service.DownLoadService"
+            android:exported="true"
+            android:process=":remote" />
+        <service
+            android:name="com.utex.service.ScreenService"
+            android:exported="true"
+            android:process=":remote" />
+
+        <!-- 魅族push应用定义消息receiver声明 -->
+        <receiver android:name="com.utex.recevier.MeizuTestReceiver">
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+                <!-- 接收register消息 -->
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+                <!-- 接收unregister消息 -->
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+                <!-- 兼容低版本Flyme3推送服务配置 -->
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.bugtags.library.BugtagsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme"
+            tools:replace="android:theme" />
+        <activity
+            android:name="com.utex.mvp.hometab.view.HomeTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.marketdetail.view.MarketDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.utex.mvp.marketdetail.view.MarketDetailFullActivity" />
+        <activity
+            android:name="com.utex.mvp.user.view.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.search.view.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.order.view.OrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.MoneyOperateRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.SysSetLanguageValuationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.WithdrawalDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.block.view.BlockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.IdentityAuthenticationSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.IdentityInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.IdentitySuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.SetCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.user.view.SetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.PictureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogActivityTheme" />
+        <activity
+            android:name="com.utex.mvp.user.view.ActivateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.ImageEntryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.LoginValidationSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.BindingPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.web.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.utex.mvp.user.view.QuickLoginActivity" />
+
+        <!-- 分享新浪微博 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false" >
+        </activity>
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:launchMode="singleTask"
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 分享微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 分享QQ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.utex.mvp.share.ExnowShareActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/DialogActivityTheme" />
+        <activity android:name="com.utex.mvp.mine.view.WeChatActivity" />
+        <activity
+            android:name="com.umeng.push.MipushTestActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.utex.mvp.mine.view.AcceptanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.RateExplainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.user.view.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.utex.mvp.mine.view.DistributeRecordActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y53"
+    android:background="@color/bffffff_13151a"
+    android:maxHeight="@dimen/y53">
+
+    <ImageView
+        android:id="@+id/iv_share_bottom_qr"
+        android:layout_width="@dimen/x58"
+        android:layout_height="@dimen/y41"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x24_5"
+        android:src="@drawable/download_qrcode" />
+
+    <TextView
+        android:id="@+id/tv_share_bottom_exnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_toRightOf="@id/iv_share_bottom_qr"
+        android:text="UTEX APP"
+        android:textColor="@color/b333333_b2ffffff" />
+
+    <TextView
+        android:id="@+id/tv_share_bottom_glod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_share_bottom_exnow"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_marginRight="@dimen/x98_5"
+        android:layout_marginTop="@dimen/y3"
+        android:layout_toRightOf="@id/iv_share_bottom_qr"
+        android:alpha="0.6"
+        android:text="@string/quan_qiu_qu_kuai_lian_zi_chan_jiao_yi_ping_tai"
+        android:textColor="@color/b666666_66ffffff"
+        android:textSize="@dimen/x10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_share_bottom_glod"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_marginTop="@dimen/y3"
+        android:layout_toRightOf="@id/iv_share_bottom_qr"
+        android:alpha="0.6"
+        android:text="@string/chang_an_shi_bie_er_wei_ma_xia_zai_app"
+        android:textColor="@color/b666666_66ffffff"
+        android:textSize="@dimen/x10" />
+
+</RelativeLayout>

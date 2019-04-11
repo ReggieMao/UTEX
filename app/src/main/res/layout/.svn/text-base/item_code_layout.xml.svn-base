@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y29"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/x25_5"
+    android:paddingRight="@dimen/x25">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_code_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/shape_code_layout_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x15_5" />
+
+    <View
+        android:layout_width="@dimen/x4_5"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_code_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y29"
+        android:layout_weight="1"
+        android:background="@drawable/shape_code_layout_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x15_5" />
+
+    <View
+        android:layout_width="@dimen/x4_5"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_code_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y29"
+        android:layout_weight="1"
+        android:background="@drawable/shape_code_layout_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x15_5" />
+
+    <View
+        android:layout_width="@dimen/x4_5"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_code_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y29"
+        android:layout_weight="1"
+        android:background="@drawable/shape_code_layout_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x15_5" />
+
+    <View
+        android:layout_width="@dimen/x4_5"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_code_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y29"
+        android:layout_weight="1"
+        android:background="@drawable/shape_code_layout_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x15_5" />
+
+    <View
+        android:layout_width="@dimen/x4_5"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_code_6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y29"
+        android:layout_weight="1"
+        android:background="@drawable/shape_code_layout_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x15_5" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y34"
+    android:background="@color/bffffff_13151a">
+
+    <TextView
+        android:id="@+id/tv_index_name"
+        style="@style/textBold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="112312"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.7"
+        android:background="@color/be3e6e4_29ffffff" />
+
+</RelativeLayout>

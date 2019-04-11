@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y34"
+    android:background="@color/bffffff_13151a">
+
+    <TextView
+        android:id="@+id/tv_search_coin_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:drawableRight="@drawable/transaction_icon_collect"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x6_5"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginRight="@dimen/x13"
+        android:background="@color/be3e6e4_29ffffff"></View>
+
+</RelativeLayout>

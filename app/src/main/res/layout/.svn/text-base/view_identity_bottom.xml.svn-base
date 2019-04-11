@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y95"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/bffffff_13151a"
+        android:maxHeight="@dimen/y129"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_identity_bottom_shot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y30"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/pai_she_shang_chuan"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x15_5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/be3e6e4_29ffffff" />
+
+
+        <TextView
+            android:id="@+id/tv_identity_bottom_album"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y30"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/cong_xiang_ce_xuan_ze_zhao_pian"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x15_5" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y3_5"
+            android:background="@color/bf2f5f3_0a0a0a"></View>
+
+
+        <TextView
+            android:id="@+id/tv_identity_bottom_cannel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y30"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/qu_xiao"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x15_5" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_order_manage_parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y67_5"
+    android:layout_marginLeft="@dimen/x4"
+    android:layout_marginRight="@dimen/x4"
+    android:layout_marginTop="@dimen/y4"
+    android:background="@drawable/my_bg_dqwt"
+    android:clickable="true"
+    android:paddingLeft="@dimen/x13"
+    android:paddingRight="@dimen/x13">
+
+    <TextView
+        android:id="@+id/tv_order_manage_coin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y10"
+        android:text="ADA"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x13_5" />
+
+    <TextView
+        android:id="@+id/tv_order_manage_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_order_manage_coin_name"
+        android:text="@string/wei_que_ren"
+        android:textColor="@color/beeab45"
+        android:textSize="@dimen/x12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order_manage_coin_name"
+        android:layout_marginTop="@dimen/y5">
+
+        <TextView
+            android:id="@+id/tv_order_manage_money_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/b666666_99ffffff"
+            android:textSize="@dimen/x13_5" />
+
+        <ProgressBar
+            android:id="@+id/pb_order_manage_money"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="@dimen/x43"
+            android:layout_height="@dimen/y4_5"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/deposit_progress_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_order_manage_money_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x13"
+            android:textColor="@color/b666666_66ffffff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_order_manage_money_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y7_5"
+        android:text="2018-05-16 16:00:00"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x10" />
+
+
+    <TextView
+        android:id="@+id/tv_order_manage_money_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/y7_5"
+        android:drawablePadding="@dimen/x3"
+        android:drawableRight="@drawable/icon_more"
+        android:text="@string/cha_kan_geng_duo"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x10" />
+</RelativeLayout>

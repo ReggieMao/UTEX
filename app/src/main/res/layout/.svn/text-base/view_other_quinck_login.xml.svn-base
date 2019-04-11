@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_other_quinck_login_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/b333333_b2ffffff"
+        android:textSize="@dimen/x14"
+        android:visibility="gone" />
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        android:id="@+id/tv_other_quinck_login_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/b333333_b2ffffff"
+        android:visibility="gone" />
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        android:id="@+id/tv_other_quinck_login_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/b333333_b2ffffff"
+        android:visibility="gone" />
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        android:id="@+id/tv_other_quinck_login_cannel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/b333333_b2ffffff" />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/x26"
+    android:layout_marginRight="@dimen/x26"
+    android:background="@drawable/shape_block_transfer_bg"
+    android:paddingLeft="@dimen/x17"
+    android:paddingRight="@dimen/x17">
+
+
+    <TextView
+        android:id="@+id/tv_block_transfer_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y9"
+        android:layout_marginBottom="@dimen/y9"
+        android:text="@string/zhan_nei_zhuan_zhang_que_ren"
+        android:textColor="@color/b666666_66ffffff"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_below="@id/tv_block_transfer_confirm"
+        android:background="@color/be3e6e4_29ffffff">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_block_transfer_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_block_transfer_confirm"
+        android:layout_marginTop="@dimen/y9"
+        android:textColor="@color/b999999_66ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_block_transfer_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_block_transfer_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y9"
+        android:layout_marginBottom="@dimen/y12"
+        android:background="@color/f398155"
+        android:paddingLeft="@dimen/x28_5"
+        android:paddingTop="@dimen/y4"
+        android:paddingRight="@dimen/x28_5"
+        android:paddingBottom="@dimen/y4"
+        android:text="@string/que_ren"
+        android:textColor="@color/fffffff" />
+
+    <ImageView
+        android:id="@+id/iv_block_transfer_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/y8"
+        android:paddingLeft="@dimen/x3"
+        android:paddingTop="@dimen/y3"
+        android:paddingRight="@dimen/x3"
+        android:paddingBottom="@dimen/y3"
+        android:src="@drawable/icon_win_close" />
+
+</RelativeLayout>

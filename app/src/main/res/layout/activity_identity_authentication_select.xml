@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a1"
+    android:orientation="vertical"
+    tools:context=".mvp.mine.view.IdentityAuthenticationSelectActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y14"
+        android:text="@string/qing_xuan_ze_nin_de_ren_zheng_lei_xing"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x20_5" />
+
+    <ImageView
+        android:id="@+id/iv_identity_zh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y48"
+        android:src="@drawable/my_sfrz_pic_zgdl" />
+
+    <TextView
+        android:id="@+id/tv_identity_zh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y9"
+        android:text="@string/zhong_guo_da_lu_di_qu"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x13_5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/x101_5"
+            android:layout_height="0.5px"
+            android:background="@color/be3e6e4_29ffffff"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x10" />
+
+        <View
+            android:layout_width="@dimen/x101_5"
+            android:layout_height="0.5px"
+            android:background="@color/be3e6e4_29ffffff"></View>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_identity_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y48"
+        android:src="@drawable/my_sfrz_icon_qtg" />
+
+    <TextView
+        android:id="@+id/tv_identity_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y9"
+        android:text="@string/qi_ta_guo_jia_huo_di_qu"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x13_5" />
+
+</LinearLayout>

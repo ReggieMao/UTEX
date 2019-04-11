@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+    tools:context=".mvp.user.view.SetPwdActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_forget_pwd_one_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x25_5"
+        android:paddingRight="@dimen/x25_5"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y25_5"
+            android:text="@string/forget_pwd"
+            android:textColor="@color/f398155"
+            android:textSize="@dimen/x15_5" />
+
+        <TextView
+            android:id="@+id/tv_forget_pwd_country_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginTop="@dimen/y17"
+            android:background="@null"
+            android:drawableRight="@drawable/icon_down"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:text="China(+86)"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_forget_pwd_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginTop="@dimen/y17"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/shou_ji_hao_ma_you_xiang"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y26_5"
+            android:layout_below="@id/et_login_pwd"
+            android:layout_marginTop="@dimen/y18"
+            android:background="@color/bd4d6d5_33ffffff"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/xia_yi_bu"
+            android:textColor="@color/bffffff_e6ffffff"
+            android:textSize="@dimen/x13_5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_forget_pwd_two_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y25_5"
+            android:text="@string/she_zhi_xin_mi_ma"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x15_5" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_forget_pwd_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginTop="@dimen/y17"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/qing_shu_ru_mi_ma"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_forget_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginTop="@dimen/y17"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/que_ren_mi_ma"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y8">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_forget_pwd_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y25"
+                android:background="@null"
+                android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+                android:hint="@string/yan_zheng_ma"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/b333333_ffffff"
+                android:textColorHint="@color/bcccccc_4cffffff"
+                android:textSize="@dimen/x13" />
+
+            <TextView
+                android:id="@+id/tv_forget_pwd_code_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/fa_song_yan_zheng_ma"
+                android:textColor="@color/f398155"
+                android:textSize="@dimen/x13" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_login_pwd"
+            android:layout_marginTop="@dimen/y18">
+
+            <TextView
+                android:id="@+id/tv_complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y26_5"
+                android:background="@color/bd4d6d5_33ffffff"
+                android:gravity="center"
+                android:text="@string/wan_cheng"
+                android:textColor="@color/bffffff_e6ffffff"
+                android:textSize="@dimen/x13_5" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_forget"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y4_5"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="snap_loader_white.json"
+                app:lottie_loop="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_forget_pwd_three_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x25_5"
+        android:paddingRight="@dimen/x25_5"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y25_5"
+            android:text="@string/she_zhi_xin_mi_ma"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x15_5" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_forget_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginTop="@dimen/y17"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/qing_shu_ru_jiu_mi_ma"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_forget_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/qing_shu_ru_xin_mi_ma"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_forget_confirm_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/que_ren_xin_mi_ma"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_login_pwd"
+            android:layout_marginTop="@dimen/y18">
+
+            <TextView
+                android:id="@+id/tv_forget_confirm_reset"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y26_5"
+                android:background="@color/bd4d6d5_33ffffff"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/que_ren_chong_zhi"
+                android:textColor="@color/bffffff_e6ffffff"
+                android:textSize="@dimen/x13_5" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_set_pwd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y4"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="snap_loader_white.json"
+                app:lottie_loop="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

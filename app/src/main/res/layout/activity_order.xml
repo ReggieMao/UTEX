@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_order_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".mvp.order.view.OrderActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_order_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bffffff_13151a3"
+        android:paddingTop="@dimen/y12"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_order_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nav_icon_back" />
+
+            <TextView
+                android:id="@+id/tv_order_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/ding_dan_guan_li"
+                android:textColor="@color/b333333_ffffff"
+                android:textSize="@dimen/x15_5" />
+
+            <TextView
+                android:id="@+id/tv_order_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x13"
+                android:drawableLeft="@drawable/my_icon_filter"
+                android:drawablePadding="@dimen/x5"
+                android:text="@string/shai_xuan"
+                android:textColor="@color/b999999_e6ffffff"
+                android:textSize="@dimen/x12" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/mi_order_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y26_5"
+        android:background="@color/bffffff_13151a3">
+
+    </net.lucode.hackware.magicindicator.MagicIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_order_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bf2f5f3_0a0a0a">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

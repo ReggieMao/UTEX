@@ -1,0 +1,188 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'realm-android'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+apply plugin: 'com.bugtags.library.plugin'
+
+android {
+    signingConfigs {
+//        config {
+//            keyAlias 'hz'
+//            keyPassword 'exnow2018'
+//            storeFile file('/Users/liuhao/Desktop/签名/exnow.jks')
+//            storePassword 'exnow2018'
+//        }
+
+        debug {
+            storeFile file("utex.jks")
+            storePassword "EbTech123456"
+            keyAlias "EBei"
+            keyPassword "EbTech123456"
+        }
+
+        release {
+            storeFile file("utex.jks")
+            storePassword "EbTech123456"
+            keyAlias "EBei"
+            keyPassword "EbTech123456"
+        }
+    }
+
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.utex"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
+        multiDexEnabled true
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+//        manifestPlaceholders = [
+//                JPUSH_PKGNAME: applicationId,
+//                JPUSH_APPKEY : "f50e5bb63cc97ff76db7f4da", //JPush 上注册的包名对应的 Appkey.
+//                JPUSH_CHANNEL: "auto", //暂时填写默认值即可.
+//        ]
+    }
+
+    packagingOptions {
+        doNotStrip '*/mips/*.so'
+        doNotStrip '*/mips64/*.so'
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "1000"
+    }
+
+    greendao {
+        schemaVersion 4
+        daoPackage 'com.utex.db'
+        targetGenDir 'src/main/java/'
+    }
+
+//    realm {
+//        syncEnabled = true
+//    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    productFlavors {
+
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir 'src/main/jniLibs'
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+//Bugtags 插件配置
+bugtags {
+//    自动上传符号表功能配置，如果需要根据 build varint 配置，请参考帮助中心->符号表->Android 符号表->配置自动上传符号表
+    appKey "15663a6b66d4eacd7b69efd2897c4915"  //这里是你的 appKey
+    appSecret "5f6c9dda6bcb246bd6c5a1857539c077"    //这里是你的 appSecret，管理员在设置页可以查看
+    mappingUploadEnabled true
+}
+
+//         live
+//appKey "15663a6b66d4eacd7b69efd2897c4915"  //这里是你的 appKey
+//appSecret "5f6c9dda6bcb246bd6c5a1857539c077"    //这里是你的 appSecret，管理员在设置页可以查看
+
+//         beta
+//appKey "59bef217620ceb3b5f3e75120cc2f52d"  //这里是你的 appKey
+//appSecret "5b4422edbafa7492103c454b6076ce6c"    //这里是你的 appSecret，管理员在设置页可以查看
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.alibaba:fastjson:1.2.12'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.7.5'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.0.4'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.google.dagger:dagger-android:2.16'
+    implementation 'com.google.dagger:dagger-android-support:2.16'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.16'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.16'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation(name: 'geetest_testbutton_android_v3.5.3', ext: 'aar')
+    implementation 'org.greenrobot:greendao:3.2.2'
+    // add library
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.bm.photoview:library:1.4.1'
+    implementation 'com.airbnb.android:lottie:2.5.5'
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.8.4'
+    implementation 'com.yanzhenjie:permission:2.0.0-rc11'
+    implementation project(':imageunlocking')
+    //    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    //    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
+    //没有使用特殊Header，可以不加这行
+    //    implementation 'com.bugtags.library:bugtags-lib:latest.integration'
+    //线上使用，如果不需要使用手动提交 issue，可以选择 metrics 包
+    implementation 'com.bugtags.metrics:bugtags-lib:latest.integration'
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation 'com.umeng.analytics:analytics:latest.integration'
+    //    implementation 'com.umeng.sdk:common:1.5.0'
+    //    implementation 'com.umeng.sdk:analytics:7.5.0'
+
+//    implementation 'cn.jiguang.sdk:jpush:3.1.6'
+//     此处以JPush 3.1.6 版本为例。
+//    implementation 'cn.jiguang.sdk:jcore:1.2.5'
+    // 此处以JCore 1.2.5 版本为例。
+
+    implementation 'com.umeng.sdk:common:1.5.3'
+    implementation 'com.umeng.sdk:utdid:1.1.5.3'
+    implementation 'com.umeng.sdk:push:4.2.0'
+    implementation files('libs/umeng-share-core-6.9.3.jar')
+    implementation files('libs/umeng-sharetool-6.9.3.jar')
+//    implementation files('libs/umeng-common-1.5.3.jar')
+    implementation files('libs/umeng-share-facebook-6.9.3.jar')
+    implementation files('libs/umeng-share-twitter-6.9.3.jar')
+
+    implementation 'com.umeng.sdk:push-xiaomi:1.0.0'
+    implementation 'com.umeng.sdk:push-huawei:1.0.0'
+    implementation 'com.umeng.sdk:push-meizu:1.0.0'
+
+}

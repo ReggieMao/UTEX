@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    tools:context=".mvp.user.view.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_user_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:src="@drawable/nav_icon_back" />
+
+        <TextView
+            android:id="@+id/tv_user_go_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginRight="@dimen/x13"
+            android:text="@string/mei_you_zhang_hao"
+            android:textSize="@dimen/x13_5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_user_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x25_5"
+        android:paddingRight="@dimen/x25_5">
+
+        <TextView
+            android:id="@+id/tv_user_account_login_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y23"
+            android:text="@string/zhang_hao_deng_lu"
+            android:textColor="@color/b333333_b2ffffff"
+            android:textSize="@dimen/x15_5" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_below="@id/tv_user_account_login_label"
+            android:layout_marginTop="@dimen/y41_5"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/shou_ji_hao_ma_you_xiang"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_below="@id/et_login_email"
+            android:layout_marginTop="@dimen/y13"
+            android:background="@null"
+            android:drawableRight="@drawable/login_icon_hide"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/qing_shu_ru_mi_ma"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y26_5"
+            android:layout_below="@id/et_login_pwd"
+            android:layout_marginTop="@dimen/y18"
+            android:background="@color/bd4d6d5_33ffffff"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/deng_lu"
+            android:textColor="@color/bffffff_e6ffffff"
+            android:textSize="@dimen/x13_5" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_login"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_register_item"
+            android:layout_alignTop="@id/tv_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y3_5"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="snap_loader_white.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/tv_login_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y18"
+            android:gravity="bottom"
+            android:text="@string/wang_ji_mi_ma"
+            android:textColor="@color/b398155_33ffffff"
+            android:textSize="@dimen/x12" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_yz_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_user_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y18"
+            android:text="21312312"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x25_5" />
+
+        <TextView
+            android:id="@+id/tv_user_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_user_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y4_5"
+            android:text="@string/qing_lian_jie_shou_shi_mi_ma_deng_lu"
+            android:textColor="@color/b999999_e6ffffff"
+            android:textSize="@dimen/x12" />
+
+        <com.github.ihsg.patternlocker.PatternLockerView
+            android:id="@+id/pattern_lock_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_user_tip"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="@dimen/y22"
+            android:layout_marginRight="50dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_zhiwen_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_user_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y64_5"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_pic_touchid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y4"
+                android:text="@string/Touch_ID"
+                android:textColor="@color/f398155"
+                android:textSize="@dimen/x12" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_user_switch_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y43"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="3dp"
+            android:text="@string/qie_huan_zhang_hao"
+            android:textColor="@color/f398155"
+            android:textSize="@dimen/x12" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

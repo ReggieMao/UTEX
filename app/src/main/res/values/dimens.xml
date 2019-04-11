@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="search_bg_width">297dp</dimen>
+    <dimen name="search_bg_height">29dp</dimen>
+    <dimen name="margin_29_px">14.5dp</dimen>
+    <dimen name="margin_20_px">10dp</dimen>
+    <dimen name="margin_10_px">5dp</dimen>
+    <dimen name="cell_w">25dp</dimen>
+    <dimen name="cell_h">11dp</dimen>
+    <dimen name="info_image_width">86dp</dimen>
+    <dimen name="info_image_height">68dp</dimen>
+    <dimen name="title_bar_height">50dp</dimen>
+
+    <dimen name="text_bigger">15sp</dimen>
+    <dimen name="text_big">11sp</dimen>
+    <dimen name="text_middle">10sp</dimen>
+    <dimen name="text_small">6sp</dimen>
+    <dimen name="text_smaller">9sp</dimen>
+    <dimen name="divider">0.5dp</dimen>
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">48dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="chat_nick_margin_left">12dp</dimen>
+    <dimen name="chat_nick_text_size">13sp</dimen>
+
+    <dimen name="chart_text_size">10sp</dimen>
+    <dimen name="chart_selector_text_size">12sp</dimen>
+    <dimen name="chart_candle_line_width">1dp</dimen>
+    <dimen name="chart_candle_width">4dp</dimen>
+    <dimen name="chart_line_width">0.5dp</dimen>
+    <dimen name="chart_grid_line_width">1dp</dimen>
+    <dimen name="chart_point_width">6dp</dimen>
+    <dimen name="chart_top_padding">15dp</dimen>
+    <dimen name="chart_bottom_padding">15dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="view_page_margin">5dp</dimen>
+
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+    tools:context=".mvp.marketdetail.view.MarketDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y26"
+        android:background="@color/bffffff_13151a"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/y2">
+
+            <TextView
+                android:id="@+id/tv_market_detail_full_title"
+                style="@style/textBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x13"
+                android:text="EOS/USDT"
+                android:textColor="@color/b333333_ffffff"
+                android:textSize="@dimen/x12" />
+
+            <TextView
+                android:id="@+id/tv_market_detail_full_price"
+                style="@style/textBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x6"
+                android:textColor="@color/f50b577"
+                android:textSize="@dimen/x11" />
+
+            <TextView
+                android:id="@+id/tv_market_detail_full_rise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x6"
+                android:textColor="@color/f50b577"
+                android:textSize="@dimen/x10" />
+
+            <TextView
+                android:id="@+id/tv_market_detail_full_plaftform_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x6"
+                android:text="=59"
+                android:textColor="@color/bafb3b0_42ffffff"
+                android:textSize="@dimen/x10" />
+
+            <TextView
+                android:id="@+id/tv_market_detail_full_gao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x140"
+                android:textColor="@color/b333333_ffffff"
+                android:textSize="@dimen/x8" />
+
+            <TextView
+                android:id="@+id/tv_market_detail_full_di"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:textColor="@color/b333333_ffffff"
+                android:textSize="@dimen/x8" />
+
+            <TextView
+                android:id="@+id/tv_market_detail_full_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:textColor="@color/b333333_ffffff"
+                android:textSize="@dimen/x8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_market_detail_full_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x13"
+                    android:paddingLeft="@dimen/x4"
+                    android:paddingRight="@dimen/x4"
+                    android:src="@drawable/win_icon_close" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rotation="180"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_shadow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.utex.widget.klinechart.chart.KChartView
+            android:id="@+id/kchart_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y185"
+            android:layout_weight="1"
+            app:kc_background_color="@color/bffffff_13151a"
+            app:kc_candle_line_width="1dp"
+            app:kc_candle_width="4dp"
+            app:kc_d_color="@color/bf2be44"
+            app:kc_dea_color="@color/be775eb"
+            app:kc_dif_color="@color/bf2be44"
+
+
+            app:kc_dn_color="@color/b227a22"
+            app:kc_grid_line_color="#d0d0d0"
+
+            app:kc_grid_line_width="0.5dp"
+            app:kc_j_color="@color/be775eb"
+            app:kc_k_color="@color/b00cc96"
+
+            app:kc_line_width="@dimen/chart_line_width"
+
+
+            app:kc_ma10_color="@color/b8ed4f5"
+            app:kc_ma20_color="@color/beb2feb"
+            app:kc_ma5_color="@color/bffe066"
+
+            app:kc_macd_color="@color/b00cc96"
+            app:kc_macd_width="4dp"
+            app:kc_mb_color="@color/b2d71ae"
+            app:kc_ris3_color="@color/be775eb"
+
+
+            app:kc_rsi1_color="@color/b00cc96"
+            app:kc_rsi2_color="@color/bf2be44"
+            app:kc_selected_line_color="@color/bb1b2b6_29ffffff"
+
+
+            app:kc_selected_line_width="1dp"
+
+            app:kc_selector_background_color="#c8d0d0d0"
+
+            app:kc_selector_text_size="@dimen/chart_selector_text_size"
+            app:kc_tab_background_color="#fff"
+            app:kc_tab_indicator_color="#4473b1"
+            app:kc_text_color="#787878"
+            app:kc_text_size="@dimen/x8_5"
+            app:kc_up_color="@color/beb2813"></com.utex.widget.klinechart.chart.KChartView>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_market_detail_full_index"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/mi_market_detail_tab_time_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y24"
+        android:background="@color/bffffff_13151a">
+
+    </net.lucode.hackware.magicindicator.MagicIndicator>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_market_detail_time_page"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
+

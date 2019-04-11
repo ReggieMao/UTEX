@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x13"
+    android:paddingRight="@dimen/x13"
+    android:paddingBottom="@dimen/y9">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_withdrawal_cannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/x10"
+            android:paddingTop="@dimen/y12"
+            android:paddingRight="@dimen/x10"
+            android:paddingBottom="@dimen/y6"
+            android:text="@string/qu_xiao"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_verification_title"
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:text="@string/an_quan_yan_zheng"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x15_5" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_verification_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_withdrawal_verification_title"
+            android:layout_marginTop="@dimen/y4"
+            android:text="@string/ru_guo_chang_shi_jian_wei_shou_dao_qing_chang_shi_la_ji_xiang"
+            android:textColor="@color/b999999_e6ffffff"
+            android:textSize="@dimen/x10_5" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_withdrawal_email_verification_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:textColor="@color/b333333_b2ffffff"
+            android:textSize="@dimen/x10_5" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_withdrawal_email_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_below="@id/tv_withdrawal_email_verification_account"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/you_xiang_yan_zheng_ma"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_verification_second"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y25"
+            android:layout_alignTop="@id/et_withdrawal_email_verification_code"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/fa_song_yan_zheng_ma"
+            android:textColor="@color/f398155"
+            android:textSize="@dimen/x12_5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_withdrawal_sms_verification_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:textColor="@color/b333333_b2ffffff"
+            android:textSize="@dimen/x10_5" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_withdrawal_sms_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_below="@id/tv_withdrawal_sms_verification_account"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/duan_xin_yan_zheng_ma"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_sms_verification_second"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y25"
+            android:layout_alignTop="@id/et_withdrawal_sms_verification_code"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/fa_song_yan_zheng_ma"
+            android:textColor="@color/f398155"
+            android:textSize="@dimen/x12_5" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_withdrawal_google_verification_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:textColor="@color/b333333_b2ffffff"
+            android:textSize="@dimen/x10_5" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_withdrawal_google_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_below="@id/tv_withdrawal_google_verification_account"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/gu_ge_yan_zheng_ma"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_withdrawal_complete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y26_5"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@drawable/login_selector"
+        android:gravity="center"
+        android:text="@string/wan_cheng"
+        android:textColor="@color/fffffff"
+        android:textSize="@dimen/x13_5" />
+
+</LinearLayout>

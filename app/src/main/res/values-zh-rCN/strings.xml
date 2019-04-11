@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">UTEX</string>
+    <string name="shou_ye">首页</string>
+    <string name="jiao_yi">交易</string>
+    <string name="zi_chan">资产</string>
+    <string name="wo">我的</string>
+
+</resources>

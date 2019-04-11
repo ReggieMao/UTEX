@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.mine.view.RateExplainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/divide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bffffff_1e2129">
+
+        <View
+            android:id="@+id/acceptance_view_1"
+            android:layout_width="@dimen/x3"
+            android:layout_height="@dimen/y7"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginTop="@dimen/y9"
+            android:background="@drawable/shape_acceptance_line" />
+
+        <TextView
+            android:id="@+id/tv_rate_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginTop="@dimen/y6_5"
+            android:layout_toRightOf="@id/acceptance_view_1"
+            android:text="@string/rate_explain_jiao_yi"
+            android:textColor="@color/b333333_b2ffffff"
+            android:textSize="@dimen/x13_5" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rate_explain"
+            android:layout_alignLeft="@id/tv_rate_explain"
+            android:layout_marginTop="@dimen/y5"
+            android:text="@string/buy_sell_jun_wei_jiao_yi_shou_xu_fei"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x12" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_marginBottom="@dimen/y5"
+            android:src="@drawable/feilv_icon"/>
+
+        <TextView
+            android:id="@+id/tv_hui_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x11"
+            android:textColor="#68cfd3"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tv"
+            android:layout_marginTop="@dimen/y4"
+            android:layout_toRightOf="@+id/img"
+            android:text="@string/hui_yuan"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y42"
+        android:layout_marginTop="@dimen/y6"
+        android:background="@color/bffffff_1e2129">
+
+        <View
+            android:id="@+id/acceptance_view_2"
+            android:layout_width="@dimen/x3"
+            android:layout_height="@dimen/y7"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginTop="@dimen/y9"
+            android:background="@drawable/shape_acceptance_line" />
+
+        <TextView
+            android:id="@+id/tv_rate_explain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginTop="@dimen/y6_5"
+            android:layout_toRightOf="@id/acceptance_view_2"
+            android:text="@string/rate_explain_chong_zhi"
+            android:textColor="@color/b333333_b2ffffff"
+            android:textSize="@dimen/x13_5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rate_explain2"
+            android:layout_alignLeft="@id/tv_rate_explain2"
+            android:layout_marginTop="@dimen/y5"
+            android:text="@string/mian_fei"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x12" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y6"
+        android:background="@color/bffffff_1e2129"
+        android:minHeight="@dimen/y42">
+
+        <View
+            android:id="@+id/acceptance_view_3"
+            android:layout_width="@dimen/x3"
+            android:layout_height="@dimen/y7"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginTop="@dimen/y9"
+            android:background="@drawable/shape_acceptance_line" />
+
+        <TextView
+            android:id="@+id/tv_rate_explain3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginTop="@dimen/y6_5"
+            android:layout_toRightOf="@id/acceptance_view_3"
+            android:text="@string/rate_explain_ti_xian"
+            android:textColor="@color/b333333_b2ffffff"
+            android:textSize="@dimen/x13_5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rate_explain3"
+            android:layout_alignLeft="@id/tv_rate_explain3"
+            android:layout_marginTop="@dimen/y5"
+            android:text="@string/ti_xian_shou_xu_fei_hui_gen_ju_qu_kuai_lian_zi_chan_de_bian_dong"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x12" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y19"
+        android:background="@color/bffffff_1e2129">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginRight="@dimen/x13"
+            android:background="@color/be3e6e4_29ffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginRight="@dimen/x13"
+            android:background="@color/be3e6e4_29ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x13"
+            android:text="@string/bi_zhong"
+            android:textColor="@color/bafb3b0_7fffffff"
+            android:textSize="@dimen/x10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x13"
+            android:text="@string/ti_bi_shou_xu_fei"
+            android:textColor="@color/bafb3b0_7fffffff"
+            android:textSize="@dimen/x10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginRight="@dimen/x13"
+            android:text="@string/zui_xiao_ti_bi_shu_liang"
+            android:textColor="@color/bafb3b0_7fffffff"
+            android:textSize="@dimen/x10" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_rate_explain_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bffffff_1e2129"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

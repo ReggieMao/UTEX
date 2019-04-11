@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+
+    tools:context=".mvp.mine.view.BindingPageActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_bind_page_phone_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_binding_page_label"
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x25_5"
+            android:layout_marginTop="@dimen/y25"
+            android:layout_marginRight="@dimen/x25_5"
+            android:text="@string/bang_ding_shou_ji_hao"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x15_5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginLeft="@dimen/x25_5"
+            android:layout_marginTop="@dimen/y28"
+            android:layout_marginRight="@dimen/x25_5">
+
+            <TextView
+                android:id="@+id/tv_bind_page_phone_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/icon_down"
+                android:drawablePadding="@dimen/x5"
+                android:gravity="center_vertical"
+                android:text="+86"
+                android:textColor="@color/b333333_ffffff"
+                android:textSize="@dimen/x13" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_bind_page_input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x5"
+                android:background="@null"
+                android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+                android:hint="@string/qing_shu_ru_nin_yao_bang_ding_de_shou_ji_hao"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/b333333_ffffff"
+                android:textColorHint="@color/bcccccc_4cffffff"
+                android:textSize="@dimen/x13" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginLeft="@dimen/x25_5"
+            android:layout_marginTop="@dimen/y16"
+            android:layout_marginRight="@dimen/x25_5">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_bind_page_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+                android:hint="@string/yan_zheng_ma"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/b333333_ffffff"
+                android:textColorHint="@color/bcccccc_4cffffff"
+                android:textSize="@dimen/x13" />
+
+            <TextView
+                android:id="@+id/tv_register_second"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y25"
+                android:layout_alignTop="@id/et_register_code"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="@string/fa_song_yan_zheng_ma"
+                android:textColor="@color/f398155"
+                android:textSize="@dimen/x12_5" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y26_5"
+                android:layout_below="@id/et_login_pwd"
+                android:layout_marginLeft="@dimen/x25_5"
+                android:layout_marginTop="@dimen/y18"
+                android:layout_marginRight="@dimen/x25_5"
+                android:background="@color/bd4d6d5_33ffffff"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/que_ding"
+                android:textColor="@color/fffffff"
+                android:textSize="@dimen/x13_5" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_bind_phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/et_login_pwd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y22"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="snap_loader_white.json"
+                app:lottie_loop="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bind_page_google_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x25_5"
+        android:paddingRight="@dimen/x25_5"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y25"
+            android:text="@string/bang_ding_gu_ge_shen_fen_ren_zheng_qi"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x15_5" />
+
+        <ImageView
+            android:id="@+id/iv_bind_page_qrcode"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y24" />
+
+        <TextView
+            android:id="@+id/tv_bind_page_secret_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:background="@drawable/shape_binding_secret_key"
+            android:drawableRight="@drawable/my_icon_copy"
+            android:paddingLeft="@dimen/x5"
+            android:paddingTop="@dimen/y5"
+            android:paddingRight="@dimen/x10"
+            android:paddingBottom="@dimen/y5"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y12"
+            android:lineSpacingExtra="@dimen/y4"
+            android:text="@string/bind_google_detail"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_binding_page_google_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y26_5"
+            android:layout_below="@id/et_login_pwd"
+            android:layout_marginLeft="@dimen/x25_5"
+            android:layout_marginTop="@dimen/y12"
+            android:layout_marginRight="@dimen/x25_5"
+            android:background="@drawable/login_selector"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/xia_yi_bu"
+            android:textColor="@color/fffffff"
+            android:textSize="@dimen/x13_5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bind_page_input_google_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x25_5"
+            android:layout_marginTop="@dimen/y25"
+            android:text="@string/shu_ru_gu_ge_yan_zheng_ma"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x15_5" />
+
+        <com.utex.widget.CodeInputView
+            android:id="@+id/civ_activate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y36"></com.utex.widget.CodeInputView>
+
+    </LinearLayout>
+
+</LinearLayout>

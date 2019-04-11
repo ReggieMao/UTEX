@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.mine.view.SysSetLanguageValuationActivity">
+
+
+    <include layout="@layout/toolbar"></include>
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/y38_5"-->
+        <!--android:background="@color/bffffff"-->
+        <!--app:contentInsetStart="0dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginBottom="@dimen/y2"-->
+                <!--android:src="@drawable/nav_icon_back" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="@string/ji_jia_fang_shi"-->
+                <!--android:textColor="@color/b333333"-->
+                <!--android:textSize="@dimen/x15_5" />-->
+
+        <!--</RelativeLayout>-->
+
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/be3e6e4_29ffffff"></View>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sys_set_lanaguage_valuation_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bffffff_13151a">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

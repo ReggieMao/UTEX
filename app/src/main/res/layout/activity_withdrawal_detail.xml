@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+    tools:context=".mvp.mine.view.WithdrawalDetailActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/be3e6e4_29ffffff"></View>
+
+    <!--android:drawableLeft="@drawable/icon_cny"-->
+
+    <TextView
+        android:id="@+id/tv_withdrawal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y16"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginTop="@dimen/y18"
+        android:drawablePadding="@dimen/x8_5"
+        android:text="GZH"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x17" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginRight="@dimen/x13"
+        android:layout_marginTop="@dimen/y24">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shu_liang"
+            android:textColor="@color/b999999_e6ffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/x13"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x13" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_withdrawal_detail_fee_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginRight="@dimen/x13"
+        android:layout_marginTop="@dimen/y12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shou_xu_fei"
+            android:textColor="@color/b999999_e6ffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/x13"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x13" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginRight="@dimen/x13"
+        android:layout_marginTop="@dimen/y12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zhuang_tai"
+            android:textColor="@color/b999999_e6ffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/x13"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x13" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y12"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginRight="@dimen/x13"
+        android:layout_marginTop="@dimen/y12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shi_jian"
+            android:textColor="@color/b999999_e6ffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/x13"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x13" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y6"
+        android:background="@color/bf2f5f3_0a0a0a"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_withdrawal_1_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y53">
+
+        <TextView
+            android:id="@+id/tv_withdrawal_detail_wallet_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginTop="@dimen/y12"
+            android:text="@string/qian_bao_di_zhi"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x11" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_withdrawal_detail_wallet_address"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginTop="@dimen/y6"
+            android:textColor="@color/b666666_99ffffff"
+            android:textSize="@dimen/x11" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_wallet_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x13"
+            android:layout_marginTop="@dimen/y12"
+            android:background="@drawable/withdrawal_detail_bg"
+            android:gravity="center"
+            android:text="@string/fu_zhi"
+            android:textColor="@color/b666666_99ffffff"
+            android:textSize="@dimen/x10" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_withdrawal_2_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y53">
+
+        <TextView
+            android:id="@+id/tv_withdrawal_detail_wallet_txid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginTop="@dimen/y12"
+            android:text="txid:"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x11" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_txid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_withdrawal_detail_wallet_txid"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginRight="@dimen/x13"
+            android:layout_marginTop="@dimen/y6"
+            android:textColor="@color/b666666_99ffffff"
+            android:textSize="@dimen/x11" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_detail_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x13"
+            android:layout_marginTop="@dimen/y12"
+            android:background="@drawable/withdrawal_detail_bg"
+            android:gravity="center"
+            android:text="@string/fu_zhi"
+            android:textColor="@color/b666666_99ffffff"
+            android:textSize="@dimen/x10" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_detail_block_explorer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x8_5"
+            android:layout_marginTop="@dimen/y12"
+            android:layout_toLeftOf="@id/tv_withdrawal_detail_copy"
+            android:background="@drawable/withdrawal_detail_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+            android:text="@string/qu_kuai_liu_lan_qi"
+            android:textColor="@color/b666666_99ffffff"
+            android:textSize="@dimen/x10" />
+    </RelativeLayout>
+
+</LinearLayout>

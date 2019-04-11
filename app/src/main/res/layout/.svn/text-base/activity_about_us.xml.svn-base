@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+    tools:context=".mvp.mine.view.AboutUsActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bebebeb"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_about_us_icon"
+            android:layout_width="@dimen/x61_5"
+            android:layout_height="@dimen/y43"
+            android:layout_marginLeft="@dimen/x4"
+            android:layout_marginTop="@dimen/y8_5"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_about_us_exnow_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginTop="@dimen/y17"
+            android:layout_toRightOf="@id/iv_about_us_icon"
+            android:text="@string/app_name"
+            android:textColor="@color/b333333_b2ffffff"
+            android:textSize="@dimen/x13_5" />
+
+        <TextView
+            android:id="@+id/tv_about_us_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_about_us_exnow_label"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_toRightOf="@id/iv_about_us_icon"
+            android:text="V 1.1.0"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x10" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/y3"
+        android:background="@color/bebebeb"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y37"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/bffffff_13151a"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y7_5"
+            android:text="@string/guan_fang_you_xiang"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_about_us_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y18"
+            android:text="sgsupport@utex.sg"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x12" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/be3e6e4_29ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us_tel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y37"
+        android:background="@color/bffffff_13151a"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y7_5"
+            android:text="@string/lian_xi_dian_hua"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_about_us_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y18"
+            android:text="17816049733"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x12" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/be3e6e4_29ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y37"
+        android:background="@color/bffffff_13151a"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y7_5"
+            android:text="@string/guan_fang_wei_xin"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_about_us_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y18"
+            android:text="utex"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x12" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/be3e6e4_29ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us_telegram_china"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y37"
+        android:background="@color/bffffff_13151a"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y7_5"
+            android:text="@string/Telegram_zhong_wen"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_about_us_telegram_china"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y18"
+            android:text="https://t.me/ExNow"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x12" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/be3e6e4_29ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us_telegram_english"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y37"
+        android:background="@color/bffffff_13151a"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y7_5"
+            android:text="@string/Telegram_english"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_about_us_telegram_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y18"
+            android:text="https://t.me/exnowofficial"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x12" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/be3e6e4_29ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y37"
+        android:background="@color/bffffff_13151a"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y7_5"
+            android:text="@string/twitter"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_about_us_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y18"
+            android:text="\@UTex93505453"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x12" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/be3e6e4_29ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_about_us_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y37"
+        android:background="@color/bffffff_13151a"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y7_5"
+            android:text="@string/facebook"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_about_us_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y18"
+            android:text="www.facebook.com/UTEX100"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x12" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/be3e6e4_29ffffff" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_about_us_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y12"
+        android:text="@string/exnow_yin_si_xie_yi"
+        android:textColor="@color/b398155_33ffffff"
+        android:textSize="@dimen/x10" />
+
+</LinearLayout>

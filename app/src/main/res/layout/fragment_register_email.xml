@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_register_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_register_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:background="@null"
+        android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+        android:hint="@string/qing_shu_ru_you_xiang_zhang_hao"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/b333333_ffffff"
+        android:textColorHint="@color/bcccccc_4cffffff"
+        android:textSize="@dimen/x13" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_register_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:layout_below="@id/et_register_email"
+        android:layout_marginTop="@dimen/y13"
+        android:background="@null"
+        android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+        android:hint="@string/qing_shu_ru_yan_zheng_ma"
+        android:inputType="number"
+        android:textColor="@color/b333333_ffffff"
+        android:textColorHint="@color/bcccccc_4cffffff"
+        android:textSize="@dimen/x13">
+
+    </android.support.v7.widget.AppCompatEditText>
+
+    <TextView
+        android:id="@+id/tv_register_second"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y25"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/et_register_code"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="@string/fa_song_yan_zheng_ma"
+        android:textColor="@color/f398155"
+        android:textSize="@dimen/x12_5" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_register_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:layout_below="@id/et_register_code"
+        android:layout_marginTop="@dimen/y13"
+        android:background="@null"
+        android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+        android:drawableRight="@drawable/login_icon_hide"
+        android:hint="@string/qing_shu_ru_mi_ma"
+        android:inputType="textPassword"
+        android:textColor="@color/b333333_ffffff"
+        android:textColorHint="@color/bcccccc_4cffffff"
+        android:textSize="@dimen/x13" />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_register_inviter_uid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:layout_below="@id/et_register_pwd"
+        android:layout_marginTop="@dimen/y13"
+        android:background="@null"
+        android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+        android:hint="@string/qing_shu_ru_yao_qing_ren_uid"
+        android:inputType="number"
+        android:textColor="@color/b333333_ffffff"
+        android:textColorHint="@color/bcccccc_4cffffff"
+        android:textSize="@dimen/x13" />
+
+
+    <TextView
+        android:id="@+id/tv_register_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_register_inviter_uid"
+        android:layout_marginTop="@dimen/y10_5"
+        android:text="@string/zhu_ce_ji_biao_shi_tong_yi"
+        android:textSize="@dimen/x12" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y26_5"
+        android:layout_below="@id/tv_register_item"
+        android:layout_marginTop="@dimen/y18"
+        android:background="@color/bd4d6d5_33ffffff"
+        android:gravity="center"
+        android:text="@string/zhu_ce"
+        android:textColor="@color/bffffff_e6ffffff"
+        android:textSize="@dimen/x13_5" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_register"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_register_item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y22"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="snap_loader_white.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y18"
+        android:layout_marginTop="@dimen/y154"
+        android:clickable="false"
+        android:text="@string/register_bottom_explain"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x10_5" />
+
+</RelativeLayout>

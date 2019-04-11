@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_market_head_parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y18"
+    android:background="@color/bffffff_13151a"
+    android:gravity="center_vertical">
+
+
+    <TextView
+        android:id="@+id/tv_market_head_vol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x13"
+        android:drawablePadding="@dimen/x1"
+        android:drawableRight="@drawable/home_icon_sorting_n"
+        android:text="@string/ershisi_h_cheng_jiao_liang"
+        android:textColor="@color/bafb3b0_42ffffff"
+        android:textSize="@dimen/x10_5" />
+
+    <TextView
+        android:id="@+id/tv_market_head_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x136_5"
+        android:drawablePadding="@dimen/x1"
+        android:drawableRight="@drawable/home_icon_sorting_n"
+        android:text="@string/jia_ge"
+        android:textColor="@color/bafb3b0_42ffffff"
+        android:textSize="@dimen/x10_5" />
+
+    <TextView
+        android:id="@+id/tv_market_head_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x13"
+        android:drawablePadding="@dimen/x1"
+        android:drawableRight="@drawable/home_icon_sorting_n"
+        android:text="@string/zhang_die_fu"
+        android:textColor="@color/bafb3b0_42ffffff"
+        android:textSize="@dimen/x10_5" />
+
+</RelativeLayout>

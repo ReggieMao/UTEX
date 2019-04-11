@@ -1,0 +1,128 @@
+<resources>
+
+    <style name="BugtagsTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="ExAppTheme" parent="Theme.AppCompat.DayNight">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bffffff_13151a</item>
+        <item name="colorPrimaryDark">@color/bffffff_13151a</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@color/bf2f5f3_0a0a0a</item>
+        <!--<item name="colorAccent">@color/b23354b</item>-->
+        <!--<item name="android:textColorPrimary">@color/primary_text</item>-->
+        <!--<item name="android:textColorSecondary">@color/secondary_text</item>-->
+        <!--<item name="colorButtonNormal">@color/bffffff</item>-->
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <!--<style name="AppTheme" parent="Theme.AppCompat.NoActionBar">-->
+    <!--&lt;!&ndash;&lt;!&ndash; Customize your theme here. &ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="colorPrimary">@color/colorPrimary</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="colorPrimaryDark">@color/colorPrimaryDark</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash; 窗口的背景颜色 &ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:windowBackground">@color/window_gray</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="colorAccent">@color/colorPrimary</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:textColorPrimary">@color/primary_text</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:textColorSecondary">@color/secondary_text</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="colorButtonNormal">@color/colorPrimary</item>&ndash;&gt;-->
+    <!--</style>-->
+
+    <!--Toobar的style-->
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <!--EditText 加减-->
+    <style name="item_car_number_add_sub_style">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/item_hometype_left_selector</item>
+        <item name="android:layout_width">@dimen/x30</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BottompSelectAnimationShow">
+        <item name="android:windowEnterAnimation">@anim/bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottom_exit</item>
+    </style>
+
+    <style name="textBold">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--switchButton-->
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean" />
+        <attr name="primaryColor" format="color" />
+        <attr name="primaryColorDark" format="color" />
+        <attr name="isOpened" format="boolean" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+
+
+    <style name="DialogActivityTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@android:color/transparent</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimAmount">0.4</item><!--透明度 0.0f到1.0f之间。1.0完全不透明，0.0f完全透明-->
+        <!--<item name="android:windowAnimationStyle">@style/MyAnimationActivity</item>-->
+    </style>
+
+
+    <declare-styleable name="ADTextView">
+        <!--文字进入与消失的时间-->
+        <attr name="ad_text_view_speed" format="integer" />
+        <!--文字停留在中心的时间-->
+        <attr name="ad_text_view_interval" format="integer" />
+        <!--前缀文字颜色-->
+        <attr name="ad_text_front_color" format="color" />
+        <!--前缀文字大小-->
+        <attr name="ad_text_front_size" format="dimension" />
+        <!--内容文字颜色-->
+        <attr name="ad_text_content_color" format="color" />
+        <!--内容文字大小-->
+        <attr name="ad_text_content_size" format="dimension" />
+    </declare-styleable>
+
+
+    <style name="push_style">
+        <item name="android:hint">@string/style_hint</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="push_alias">
+        <item name="android:hint">@string/alias_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="push_tag">
+        <item name="android:hint">@string/tag_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="push_mobilenumber">
+        <item name="android:hint">@string/mobilenumber_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

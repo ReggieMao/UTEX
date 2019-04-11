@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bf2f5f3_0a0a0a"
+    android:orientation="vertical"
+    tools:context=".mvp.marketdetail.view.MarketDetailActivity">
+
+    <ScrollView
+        android:id="@+id/sv_market_detail_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bf2f5f3_0a0a0a"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_market_detail_top_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transaction_bg_falling">
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentInsetStart="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_market_detail_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x4"
+                            android:layout_marginTop="@dimen/y16"
+                            android:src="@drawable/nav_icon_back_white" />
+
+                        <TextView
+                            android:id="@+id/tv_market_detail_title"
+                            style="@style/textBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/y18"
+                            android:textColor="@color/fffffff"
+                            android:textSize="@dimen/x15_5" />
+
+                        <ImageView
+                            android:id="@+id/iv_market_detail_optional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/y18"
+                            android:paddingLeft="@dimen/x5"
+                            android:paddingRight="@dimen/x5"
+                            android:src="@drawable/transaction_icon_collect_sel" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+                <TextView
+                    android:id="@+id/tv_market_detail_price"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x13"
+                    android:layout_marginRight="@dimen/x13"
+                    android:layout_marginTop="@dimen/y41_5"
+                    android:textColor="@color/fffffff"
+                    android:textSize="@dimen/x20_5" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_plaftform_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_market_detail_price"
+                    android:layout_marginLeft="@dimen/x13"
+                    android:layout_marginTop="@dimen/y3"
+                    android:textColor="@color/fffffff"
+                    android:textSize="@dimen/x11" />
+
+                <TextView
+                    android:id="@+id/tv_market_defalue_rise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_market_detail_price"
+                    android:layout_marginLeft="@dimen/x6_5"
+                    android:layout_marginTop="@dimen/y3"
+                    android:layout_toRightOf="@id/tv_market_detail_plaftform_price"
+                    android:textColor="@color/fffffff"
+                    android:textSize="@dimen/x11" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_vol"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_market_detail_plaftform_price"
+                    android:layout_marginLeft="@dimen/x13"
+                    android:layout_marginTop="@dimen/y7_5"
+                    android:text="@string/ershisi_h_cheng_jiao_liang1"
+                    android:textColor="@color/f99ffffff"
+                    android:textSize="@dimen/x10_5" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_vol_num"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_market_detail_vol"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:layout_toRightOf="@id/tv_market_detail_vol"
+                    android:textColor="@color/fffffff"
+                    android:textSize="@dimen/x10_5" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_gao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_market_detail_price"
+                    android:layout_marginRight="@dimen/x53"
+                    android:text="@string/gao"
+                    android:textColor="@color/f99ffffff"
+                    android:textSize="@dimen/x10_5" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_gao_num"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_market_detail_gao"
+                    android:layout_below="@id/tv_market_detail_gao"
+                    android:textColor="@color/fffffff"
+                    android:textSize="@dimen/x10_5" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_kai"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_market_detail_price"
+                    android:layout_marginRight="@dimen/x58_5"
+                    android:layout_toLeftOf="@id/tv_market_detail_gao"
+                    android:text="@string/kai"
+                    android:textColor="@color/f99ffffff"
+                    android:textSize="@dimen/x10_5" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_kai_num"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_market_detail_kai"
+                    android:layout_below="@id/tv_market_detail_kai"
+                    android:textColor="@color/fffffff"
+                    android:textSize="@dimen/x10_5" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_di"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_market_detail_gao_num"
+                    android:layout_below="@id/tv_market_detail_gao_num"
+                    android:layout_marginTop="@dimen/y9"
+                    android:text="@string/di"
+                    android:textColor="@color/f99ffffff"
+                    android:textSize="@dimen/x10_5" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_di_num"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_market_detail_di"
+                    android:layout_below="@id/tv_market_detail_di"
+                    android:textColor="@color/fffffff"
+                    android:textSize="@dimen/x10_5" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_shou"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_market_detail_di"
+                    android:layout_marginRight="@dimen/x58_5"
+                    android:layout_toLeftOf="@id/tv_market_detail_di"
+                    android:text="@string/shou"
+                    android:textColor="@color/f99ffffff"
+                    android:textSize="@dimen/x10_5" />
+
+                <TextView
+                    android:id="@+id/tv_market_detail_shou_num"
+                    style="@style/textBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_market_detail_shou"
+                    android:layout_below="@id/tv_market_detail_shou"
+                    android:textColor="@color/fffffff"
+                    android:textSize="@dimen/x10_5" />
+
+            </RelativeLayout>
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/mi_market_detail_tab_time_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y24"
+                android:layout_weight="1"
+                android:background="@color/bffffff_13151a">
+
+            </net.lucode.hackware.magicindicator.MagicIndicator>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_market_detail_time_page"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y3">
+
+            </android.support.v4.view.ViewPager>
+
+            <com.utex.widget.klinechart.chart.KChartView
+                android:id="@+id/kchart_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y185"
+                android:layout_weight="1"
+                app:kc_background_color="@color/bffffff_13151a"
+                app:kc_candle_line_width="1dp"
+                app:kc_candle_width="4dp"
+                app:kc_d_color="@color/bf2be44"
+                app:kc_dea_color="@color/be775eb"
+                app:kc_dif_color="@color/bf2be44"
+                app:kc_dn_color="@color/b227a22"
+                app:kc_grid_line_color="#d0d0d0"
+                app:kc_grid_line_width="0.5dp"
+                app:kc_j_color="@color/be775eb"
+                app:kc_k_color="@color/b00cc96"
+                app:kc_line_width="@dimen/chart_line_width"
+                app:kc_ma10_color="@color/b8ed4f5"
+                app:kc_ma20_color="@color/beb2feb"
+                app:kc_ma5_color="@color/bffe066"
+                app:kc_macd_color="@color/b00cc96"
+                app:kc_macd_width="4dp"
+                app:kc_mb_color="@color/b2d71ae"
+                app:kc_ris3_color="@color/be775eb"
+                app:kc_rsi1_color="@color/b00cc96"
+                app:kc_rsi2_color="@color/bf2be44"
+                app:kc_selected_line_color="@color/bb1b2b6_29ffffff"
+                app:kc_selected_line_width="1dp"
+                app:kc_selector_background_color="#c8d0d0d0"
+                app:kc_selector_text_size="@dimen/chart_selector_text_size"
+                app:kc_tab_background_color="#fff"
+                app:kc_tab_indicator_color="#4473b1"
+                app:kc_text_color="#787878"
+                app:kc_text_size="@dimen/x8_5"
+                app:kc_up_color="@color/beb2813"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y24"
+                android:orientation="horizontal">
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/mi_market_detail_tab_index_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y24"
+                    android:layout_weight="1"
+                    android:background="@color/bffffff_13151a">
+
+                </net.lucode.hackware.magicindicator.MagicIndicator>
+
+                <ImageView
+                    android:id="@+id/iv_market_detail_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/bffffff_13151a"
+                    android:paddingLeft="@dimen/x13"
+                    android:paddingRight="@dimen/x13"
+                    android:src="@drawable/transaction_icon_full" />
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_market_detail_index_page"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y6">
+
+            </android.support.v4.view.ViewPager>
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/mi_market_detail_tab_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y26_5"
+                android:background="@color/bffffff_13151a">
+
+            </net.lucode.hackware.magicindicator.MagicIndicator>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/be3e6e4_29ffffff" />
+
+            <com.utex.widget.viewpager.FullScreenViewPager
+                android:id="@+id/vp_market_detail_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.utex.widget.viewpager.FullScreenViewPager>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y36"
+        android:background="@color/bffffff_13151a"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_market_detail_buy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_weight="1"
+            android:background="@color/f50b577"
+            android:gravity="center"
+            android:text="@string/buy"
+            android:textColor="@color/fffffff"
+            android:textSize="@dimen/x13_5" />
+
+        <TextView
+            android:id="@+id/tv_market_detail_sell"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x8_5"
+            android:layout_marginRight="@dimen/x13"
+            android:layout_weight="1"
+            android:background="@color/fee6a5e"
+            android:gravity="center"
+            android:text="@string/sell"
+            android:textColor="@color/fffffff"
+            android:textSize="@dimen/x13_5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x28"
+            android:drawableTop="@drawable/transaction_icon_more"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/geng_duo"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x8_5"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

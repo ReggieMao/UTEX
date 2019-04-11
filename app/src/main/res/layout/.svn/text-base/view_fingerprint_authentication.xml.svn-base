@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
+        android:background="@drawable/shape_fingerprint_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="data.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y60"
+            android:text="@string/qing_yan_zheng_zhi_wen"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x13" />
+
+
+        <TextView
+            android:id="@+id/tv_cannel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y30"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/qu_xiao"
+            android:textColor="@color/b333333_ffffff"
+            android:textSize="@dimen/x13" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/tv_cannel"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@color/be3e6e4_29ffffff" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

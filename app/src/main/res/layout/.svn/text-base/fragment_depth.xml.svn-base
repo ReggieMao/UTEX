@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical">
+
+    <com.utex.widget.klinechart.DepthMap
+        android:id="@+id/dm_depth_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y134_5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y3"
+        android:background="@color/bf2f5f3_0a0a0a" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bffffff_13151a">
+
+        <TextView
+            android:id="@+id/tv_depth_bid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x6"
+            android:text="@string/buy_pan"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x10_5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x11_5"
+            android:layout_toRightOf="@id/tv_depth_bid"
+            android:text="@string/shu_liang"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x11_5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/x40"
+            android:text="@string/jia_ge"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x10_5" />
+
+        <TextView
+            android:id="@+id/tv_depth_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/x5"
+            android:text="@string/sell_pan"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x10_5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/x20_5"
+            android:layout_toLeftOf="@id/tv_depth_ask"
+            android:text="@string/shu_liang"
+            android:textColor="@color/bafb3b0_42ffffff"
+            android:textSize="@dimen/x10_5" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_depth_bid_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_depth_asks_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+    tools:context=".mvp.user.view.ActivateActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y44"
+        android:src="@drawable/login_pic_mail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y12"
+        android:text="@string/qing_zai_nin_de_zhu_ce_you_xiang_cha_shou_yan_zheng_ma"
+        android:textColor="@color/b666666_99ffffff"
+        android:textSize="@dimen/x13" />
+
+    <TextView
+        android:id="@+id/tv_activate_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y12"
+        android:text="@string/dian_ji_fa_song"
+        android:textColor="@color/f398155"
+        android:textSize="@dimen/x12" />
+
+    <com.utex.widget.CodeInputView
+        android:id="@+id/civ_activate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y27_5"></com.utex.widget.CodeInputView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y12"
+        android:text="@string/ru_guo_chang_shi_jian_wei_shou_dao_qing_chang_shi_la_ji_xiang"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x10" />
+</LinearLayout>

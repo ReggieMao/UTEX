@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y62"
+    android:background="@color/bffffff_13151a"
+    android:paddingLeft="@dimen/x13"
+    android:paddingRight="@dimen/x13">
+
+    <TextView
+        android:id="@+id/tv_trad_entrust_direction"
+        style="@style/textBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y12"
+        android:text="@string/buy"
+        android:textColor="@color/f50b577"
+        android:textSize="@dimen/x13_5" />
+
+    <TextView
+        android:id="@+id/tv_trad_entrust_revoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_trad_entrust_direction"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/y12"
+        android:text="@string/che_xiao"
+        android:textColor="@color/f398155"
+        android:textSize="@dimen/x10" />
+
+    <TextView
+        android:id="@+id/tv_trad_entrust_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_trad_entrust_direction"
+        android:layout_marginLeft="@dimen/x8"
+        android:layout_marginTop="@dimen/y12"
+        android:layout_toRightOf="@id/tv_trad_entrust_direction"
+        android:text="05-16 16:00"
+        android:textColor="@color/f398155"
+        android:textSize="@dimen/x10" />
+
+    <TextView
+        android:id="@+id/tv_trad_entrust_price"
+        style="@style/textBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_trad_entrust_direction"
+        android:layout_marginTop="@dimen/y7"
+        android:text="0.373"
+        android:textColor="@color/b666666_99ffffff"
+        android:textSize="@dimen/x12" />
+
+    <TextView
+        android:id="@+id/tv_trad_entrust_amount"
+        style="@style/textBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_trad_entrust_direction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y7"
+        android:text="0.373"
+        android:textColor="@color/b666666_99ffffff"
+        android:textSize="@dimen/x12" />
+
+    <TextView
+        android:id="@+id/tv_trad_entrust_actual_amount"
+        style="@style/textBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_trad_entrust_direction"
+        android:layout_marginTop="@dimen/y7"
+        android:text="0.373"
+        android:textColor="@color/b666666_99ffffff"
+        android:textSize="@dimen/x12" />
+
+    <TextView
+        android:id="@+id/tv_trad_entrust_price_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_trad_entrust_price"
+        android:layout_marginTop="@dimen/y5"
+        android:text="价格(USDT)"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x10_5" />
+
+    <TextView
+        android:id="@+id/tv_trad_entrust_amount_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_trad_entrust_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y5"
+        android:text="数量(ETC)"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x10_5" />
+
+    <TextView
+        android:id="@+id/tv_trad_entrust_actual_amount_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_trad_entrust_price"
+        android:layout_marginTop="@dimen/y5"
+        android:text="实际成交(ETC)"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x10_5" />
+
+</RelativeLayout>

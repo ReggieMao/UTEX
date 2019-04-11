@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/x34_5"
+    android:layout_marginRight="@dimen/x34_5"
+    android:background="@color/bffffff_13151a"
+    android:paddingBottom="@dimen/y12">
+
+    <TextView
+        android:id="@+id/tv_identity_authentication_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y9"
+        android:text="@string/shen_fen_ren_zheng"
+        android:textColor="@color/b666666_66ffffff"
+        android:textSize="@dimen/x15_5" />
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/y9"
+        android:alpha="0.4"
+        android:paddingLeft="@dimen/x8"
+        android:paddingRight="@dimen/x8"
+        android:paddingBottom="@dimen/y4"
+        android:text="x"
+        android:textColor="@color/b398155_33ffffff"
+        android:textSize="@dimen/x14" />
+
+    <View
+        android:id="@+id/view__identity_authentication_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_below="@id/tv_identity_authentication_label"
+        android:layout_marginTop="@dimen/y7_5"
+        android:background="@color/be3e6e4_29ffffff" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view__identity_authentication_line"
+        android:layout_marginLeft="@dimen/x17"
+        android:layout_marginTop="@dimen/y6"
+        android:layout_marginRight="@dimen/x17"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/wei_le_zhuN_xun_xiang_guan_guo_jia_fan_xi_qian_fa_lv_fa_gui_yao_qiu_xian_jin_xing_shen_fen_yan_zheng"
+        android:textColor="@color/b999999_66ffffff"
+        android:textSize="@dimen/x12" />
+
+    <TextView
+        android:id="@+id/tv_btn"
+        android:layout_width="@dimen/x140"
+        android:layout_height="@dimen/y24"
+        android:layout_below="@id/tv_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y9"
+        android:background="@drawable/shape_non_identity_authentication_bg"
+        android:gravity="center"
+        android:text="@string/qian_wang_ren_zheng"
+        android:textColor="@color/fffffff" />
+
+
+</RelativeLayout>

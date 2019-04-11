@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_market_handicap_parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y16_5"
+    android:background="@color/bffffff_13151a">
+
+    <ProgressBar
+        android:id="@+id/pb_market_bg"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        android:minHeight="100dp"
+        android:progressDrawable="@drawable/bid_cat_bg"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_market_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x13"
+        android:textColor="@color/f50b577"
+        android:textSize="@dimen/x10_5" />
+
+
+    <TextView
+        android:id="@+id/tv_market_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/f50b577"
+        android:textSize="@dimen/x10_5" />
+
+    <TextView
+        android:id="@+id/tv_market_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x5"
+        android:textColor="@color/b666666_99ffffff"
+        android:textSize="@dimen/x10_5" />
+
+
+</RelativeLayout>

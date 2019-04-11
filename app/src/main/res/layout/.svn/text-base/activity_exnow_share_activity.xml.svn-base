@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_share_small_parent"
+        android:layout_width="@dimen/x75"
+        android:layout_height="@dimen/y81_5"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x13"
+        android:layout_marginTop="@dimen/y148_5"
+        android:background="@color/bafb3b0_7fffffff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_share_small_icon"
+            android:layout_width="@dimen/x71_5"
+            android:layout_height="@dimen/y64_5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y1"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y2"
+            android:text="@string/dian_ji_fen_xiang"
+            android:textColor="@color/bffffff_13151a"
+            android:textSize="@dimen/x10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_share_bottom_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y130_5"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bffffff_13151a"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y9"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginTop="@dimen/y9"
+            android:text="@string/fen_xiang_jie_tu"
+            android:textColor="@color/b333333_b2ffffff"
+            android:textSize="@dimen/x12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginRight="@dimen/x13"
+            android:alpha="0.3"
+            android:background="@color/bebebeb">
+
+        </View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_share_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y69_5">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <include layout="@layout/divide_line" />
+
+        <TextView
+            android:id="@+id/tv_share_cannel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/qu_xiao_fen_xiang"
+            android:textColor="@color/b333333_b2ffffff"
+            android:textSize="@dimen/x13_5" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

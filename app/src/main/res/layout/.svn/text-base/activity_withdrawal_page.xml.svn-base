@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_block_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:background="@color/bffffff_13151a3"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_page_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/nav_icon_back" />
+
+            <TextView
+                android:id="@+id/tv_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/y8_5"
+                android:text="GZH充值"
+                android:textColor="@color/b333333_e6ffffff"
+                android:textSize="@dimen/x15_5" />
+
+            <TextView
+                android:id="@+id/tv_page_deposit_withdrawal_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/x13"
+                android:layout_marginBottom="@dimen/y10"
+                android:text="@string/chong_ti_ji_lu"
+                android:textColor="@color/f398155"
+                android:textSize="@dimen/x13" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/view_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tb_block_title_bar"
+        android:background="@color/be3e6e4_29ffffff"/>
+
+    <RadioGroup
+        android:id="@+id/rg_withdrawal_direction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y19_5"
+        android:layout_marginTop="@dimen/y12"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rg_withdrawal_coin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x25_5"
+            android:layout_weight="1"
+            android:background="@drawable/withdrawal_page_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/ti_bi"
+            android:textColor="@drawable/withdrawal_page_selector"
+            android:textSize="@dimen/x13" />
+
+        <RadioButton
+            android:id="@+id/rg_withdrawal_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x25_5"
+            android:layout_weight="1"
+            android:background="@drawable/withdrawal_page_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/zhan_nei_hua_zhuan"
+            android:textColor="@drawable/withdrawal_page_selector"
+            android:textSize="@dimen/x13" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_page_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x25_5"
+        android:layout_marginTop="@dimen/y24"
+        android:text="@string/ke_yong"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x13" />
+
+    <TextView
+        android:id="@+id/tv_page_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x25_5"
+        android:layout_marginTop="@dimen/y7_5"
+        android:text="@string/fei_yong"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x13" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_page_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:layout_below="@id/et_login_email"
+        android:layout_marginLeft="@dimen/x25_5"
+        android:layout_marginTop="@dimen/y13"
+        android:layout_marginRight="@dimen/x25_5"
+        android:background="@null"
+        android:drawableRight="@drawable/property_icon_sys"
+        android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+        android:hint="@string/ti_bi_di_zhi"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/b333333_ffffff"
+        android:textColorHint="@color/bcccccc_4cffffff"
+        android:textSize="@dimen/x13" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:layout_below="@id/et_login_email"
+        android:layout_marginLeft="@dimen/x25_5"
+        android:layout_marginTop="@dimen/y13"
+        android:layout_marginRight="@dimen/x25_5">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_page_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+            android:hint="@string/shu_liang"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textColor="@color/b333333_ffffff"
+            android:textColorHint="@color/bcccccc_4cffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_page_all_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/quan_bu"
+            android:textColor="@color/f398155" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_page_tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:layout_below="@id/et_login_email"
+        android:layout_marginLeft="@dimen/x25_5"
+        android:layout_marginTop="@dimen/y13"
+        android:layout_marginRight="@dimen/x25_5"
+        android:background="@null"
+        android:drawableBottom="@drawable/shape_login_et_bottom_line_bg"
+        android:hint="TAG"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="@color/b333333_ffffff"
+        android:textColorHint="@color/bcccccc_4cffffff"
+        android:textSize="@dimen/x13" />
+
+    <TextView
+        android:id="@+id/tv_page_arrive_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/y10_5"
+        android:layout_marginRight="@dimen/x25_5"
+        android:text="@string/dao_zhang"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x12" />
+
+    <TextView
+        android:id="@+id/tv_page_withdraw_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y26_5"
+        android:layout_marginLeft="@dimen/x25_5"
+        android:layout_marginTop="@dimen/y18"
+        android:layout_marginRight="@dimen/x25_5"
+        android:background="@color/bd4d6d5_33ffffff"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/ti_bi"
+        android:textColor="@color/fffffff"
+        android:textSize="@dimen/x13_5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginTop="@dimen/y24"
+        android:text="@string/wen_xin_ti_shi"
+        android:textColor="@color/b666666_99ffffff"
+        android:textSize="@dimen/x12" />
+
+    <TextView
+        android:id="@+id/tv_page_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginTop="@dimen/y3"
+        android:layout_marginRight="@dimen/x26"
+        android:textColor="@color/bafb3b0_42ffffff"
+        android:textSize="@dimen/x12" />
+
+</LinearLayout>

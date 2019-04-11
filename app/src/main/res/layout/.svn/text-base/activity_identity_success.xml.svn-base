@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical"
+    tools:context=".mvp.mine.view.IdentitySuccessActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/be3e6e4_29ffffff" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y39"
+        android:src="@drawable/submit_icon_tjcg" />
+
+    <TextView
+        android:id="@+id/tv_identity_success_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y12"
+        android:gravity="center_horizontal"
+        android:text="@string/ti_jiao_cheng_gong_deng_dai_shen_he"
+        android:textColor="@color/b333333_ffffff"
+        android:textSize="@dimen/x17" />
+
+    <TextView
+        android:id="@+id/tv_identity_success_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x41"
+        android:layout_marginRight="@dimen/x41"
+        android:layout_marginTop="@dimen/y24"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/y5"
+        android:text="@string/shen_he_xu_yao_yi_dao_er_ge_gong_zuo_ri"
+        android:textColor="@color/b999999_e6ffffff"
+        android:textSize="@dimen/x12" />
+
+    <TextView
+        android:id="@+id/tv_identity_go_home"
+        android:layout_width="@dimen/x139_5"
+        android:layout_height="@dimen/y24"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y12"
+        android:background="@drawable/shape_identity_success_go_home_bg"
+        android:gravity="center"
+        android:text="@string/qu_shou_ye"
+        android:textColor="@color/bffffff_13151a" />
+
+</LinearLayout>

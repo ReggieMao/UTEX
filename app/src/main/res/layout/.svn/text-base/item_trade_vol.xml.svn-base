@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y16"
+    android:background="@color/bffffff_13151a"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_trade_vol_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x13"
+        android:text="20:09"
+        android:textColor="@color/b666666_99ffffff"
+        android:textSize="@dimen/x10" />
+
+    <TextView
+        android:id="@+id/tv_trade_vol_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x9_5"
+        android:layout_toRightOf="@id/tv_trade_vol_time"
+        android:text="13.95551"
+        android:textColor="@color/f50b577"
+        android:textSize="@dimen/x10" />
+
+    <TextView
+        android:id="@+id/tv_trade_vol_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x13"
+        android:text="1k"
+        android:textColor="@color/b666666_99ffffff"
+        android:textSize="@dimen/x10" />
+
+</RelativeLayout>

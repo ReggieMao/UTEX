@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bffffff_13151a"
+    android:orientation="vertical">
+
+    <include layout="@layout/divide_line" />
+
+    <include layout="@layout/item_market_head"></include>
+
+    <include layout="@layout/divide_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_market_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bffffff_13151a">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_page_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/y30"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_none_zwzx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y5"
+            android:text="@string/zan_wu_zi_xuan_bi_zhong"
+            android:textColor="@color/bc8ccc9_33ffffff"
+            android:textSize="@dimen/x12" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

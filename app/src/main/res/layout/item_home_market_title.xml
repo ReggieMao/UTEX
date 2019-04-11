@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view_market_title_start"
+        android:layout_width="@dimen/x11"
+        android:layout_height="match_parent"
+        android:visibility="gone"></View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_home_market_title_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/home_btn_sel" />
+
+        <TextView
+            android:id="@+id/tv_home_market_title_name"
+            android:layout_width="@dimen/x69_5"
+            android:layout_height="@dimen/y24"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y3_5"
+            android:background="@drawable/home_title_true_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="自选"
+            android:textColor="@color/bffffff_13151a"
+            android:textSize="@dimen/x13_5" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view_market_title_end"
+        android:layout_width="@dimen/x11"
+        android:layout_height="match_parent"
+        android:visibility="gone"></View>
+
+    <!--<View-->
+    <!--android:layout_width="@dimen/x2_5"-->
+    <!--android:layout_height="match_parent"></View>-->
+
+</LinearLayout>

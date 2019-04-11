@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="update_bg">#FFFFFF</color>
+    <color name="bff0000">#ff0000</color>
+    <color name="bffffff_13151a">#ffffff</color>
+    <color name="bffffff_13151a1">#ffffff</color>
+    <color name="bffffff_13151a2">#ffffff</color>
+    <color name="bffffff_13151a3">#ffffff</color>
+    <color name="bf2f5f3_0a0a0a">#f2f5f3</color>
+    <color name="cEE">#EEEEEE</color>
+    <color name="b333333_ffffff">#333333</color>
+    <color name="bafb3b0_42ffffff">#A3A3A3</color>
+    <color name="b2a2a2a_ffffff">#2a2a2a</color>
+    <color name="b999999_e6ffffff">#A3A3A3</color>
+    <color name="bf5f5f5_29ffffff">#f5f5f5</color>
+    <color name="bcccccc_4cffffff">#cccccc</color>
+    <color name="f398155">#3CCCCE</color>
+    <color name="transparent">#d05b5b5b</color>
+    <color name="f39815512">#3CCCCE</color>
+    <color name="f50b577">#50b577</color>
+    <color name="be3e6e4_29ffffff">#e3e6e4</color>
+    <color name="aaa">#e3e6e4</color>
+    <color name="b3f3f3f">#3f3f3f</color>
+    <color name="b666666_99ffffff">#666666</color>
+    <color name="fee6a5e">#ee6a5e</color>
+    <color name="bd4d6d5_33ffffff">#d4d6d5</color>
+    <color name="bd4d6d5_33ffffff1">#33ffffff</color>
+    <color name="f3981551">#3CCCCE</color>
+    <color name="b419461">#419461</color>
+    <color name="b1b3325">#1b3325</color>
+    <color name="b151515">#151515</color>
+    <color name="beeab45">#eeab45</color>
+    <color name="be6e6e6">#e6e6e6</color>
+    <color name="bf2be44">#f2be44</color>
+
+
+    <color name="chart_red">#d64541</color>
+
+    <color name="chart_ma5">#18CCF6</color>
+    <color name="chart_ma10">#FE5EDF</color>
+    <color name="chart_ma20">#E7A520</color>
+    <color name="chart_white">#fff</color>
+
+    <color name="chart_background">#202326</color>
+    <color name="chart_grid_line">#353941</color>
+    <color name="chart_text">#B1B2B6</color>
+    <color name="chart_selector">#c830343C</color>
+    <color name="chart_tab_background">#30343C</color>
+    <color name="chart_tab_indicator">#FF6601</color>
+    <color name="be775eb">#e775eb</color>
+    <color name="b00cc96">#00cc96</color>
+    <color name="beb2813">#eb2813</color>
+    <color name="b2d71ae">#2d71ae</color>
+    <color name="b227a22">#227a22</color>
+    <color name="bbdb5a6">#bdb5a6</color>
+    <color name="be5871c">#e5871c</color>
+    <color name="tab_text_color_selector">#000000</color>
+    <color name="bf55151">#f55151</color>
+    <color name="b10c970">#10c970</color>
+    <color name="b8ed4f5">#8ed4f5</color>
+    <color name="beb2feb">#eb2feb</color>
+    <color name="bffe066">#ffe066</color>
+    <color name="bf3f8f4">#f3f8f4</color>
+    <color name="bc8ccc9_0a0a0a">#c8ccc9</color>
+    <color name="c242640">#ffffff</color>
+    <color name="bebf2ee_29ffffff">#ebf2ee</color>
+    <color name="b646966">#646966</color>
+    <color name="b66398155">#D8F4F5</color>
+    <color name="b19398155">#19398155</color>
+    <color name="b19ee6a5e">#19ee6a5e</color>
+    <color name="c33">#333333</color>
+    <color name="da_xin">#000000</color>
+
+    <!-- 正常view颜色 -->
+    <color name="be3e3e3">#E3E3E3</color>
+    <!-- 正常view边框颜色 -->
+    <color name="bd2d2d2">#D2D2D2</color>
+
+    <!-- 选中view颜色 -->
+    <color name="b4ad863">#4AD863</color>
+    <color name="fffffff">#ffffff</color>
+    <color name="b999999_66ffffff">#999999</color>
+    <color name="b333333_e6ffffff">#333333</color>
+    <color name="bf2f5f3_0ffffffff">#f2f5f3</color>
+    <color name="b40e3e6e4_29ffffff">#40e3e6e4</color>
+    <color name="bafb3b0_7fffffff">#afb3b0</color>
+    <color name="b398155_ffffff">#398155</color>
+    <color name="bf2f5f3_29ffffff">#f2f5f3</color>
+    <color name="bffffff_4cffffff">#ffffff</color>
+    <color name="bf2f5f3_398155">#f2f5f3</color>
+    <color name="b398155_42ffffff">#398155</color>
+    <color name="bf3f8f4_0fffffff">#f3f8f4</color>
+    <color name="f99ffffff">#99ffffff</color>
+    <color name="bb1b2b6_29ffffff">#b1b2b6</color>
+    <color name="b909499_656565">#909499</color>
+    <color name="b282e39_29ffffff">#282e39</color>
+    <color name="b909499_686868">#909499</color>
+    <color name="be3e6e4_0a0a0a">#e3e6e4</color>
+    <color name="b398155_d9ffffff">#398155</color>
+    <color name="be3e3e3_42ffffff">#e3e3e3</color>
+    <color name="b4ad863_398155">#4ad863</color>
+    <color name="bffffff_e6ffffff">#ffffff</color>
+    <color name="bd2d2d2_42ffffff">#d2d2d2</color>
+    <color name="b398155_99ffffff">#398155</color>
+    <color name="bffffff_66ffffff">#ffffff</color>
+    <color name="b398155_33ffffff">#3CCCCE</color>
+    <color name="bffffff_33ffffff">#ffffff</color>
+    <color name="bd4d6d5_42ffffff">#d4d6d5</color>
+    <color name="b666666_66ffffff">#666666</color>
+    <color name="b333333_b2ffffff">#333333</color>
+    <color name="fd4a45f">#d4a45f</color>
+    <color name="f6AA07F">#6aa07f</color>
+    <color name="ff1c073">#f1c073</color>
+    <color name="bc8ccc9_33ffffff">#c8ccc9</color>
+    <color name="bffffff_1e2129">#ffffff</color>
+    <color name="f5acc86">#5acc86</color>
+    <color name="fff7e73">#ff7e73</color>
+    <color name="bebebeb">#ebebeb</color>
+    <color name="bf7f7fa_090909">#f7f7fa</color>
+    <color name="b435566">#435566</color>
+    <color name="b33398155">#33398155</color>
+    <color name="baabdba">#aabdba</color>
+    <color name="bf9f9f9">#f9f9f9</color>
+    <color name="f333333">#333333</color>
+    <color name="bf9f9f9_0a0a0a">#f9f9f9</color>
+    <color name="cE6">#E6E6E6</color>
+    <color name="version1">#000000</color>
+    <color name="version2">#666666</color>
+    <color name="green">#398155</color>
+
+</resources>

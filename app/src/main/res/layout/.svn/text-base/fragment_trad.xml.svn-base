@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dl_trad_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bf2f5f3_0a0a0a"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y38_5"
+            android:background="@color/bffffff_13151a"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/y9"
+                android:paddingLeft="@dimen/x13">
+
+                <ImageView
+                    android:id="@+id/iv_trad_market_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/y6"
+                    android:paddingRight="@dimen/x4"
+                    android:paddingTop="@dimen/y6"
+                    android:src="@drawable/transaction_icon_unfold" />
+
+                <TextView
+                    android:id="@+id/tv_trad_coin_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_trad_market_list"
+                    android:textColor="@color/b333333_e6ffffff"
+                    android:textSize="@dimen/x15_5" />
+
+                <TextView
+                    android:id="@+id/tv_trad_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x7"
+                    android:layout_toRightOf="@id/tv_trad_coin_name"
+                    android:paddingTop="@dimen/y1_5"
+                    android:textColor="@color/f50b577"
+                    android:textSize="@dimen/x12" />
+
+                <ImageView
+                    android:id="@+id/iv_trad_optional"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/x8"
+                    android:src="@drawable/transaction_icon_collect" />
+
+                <ImageView
+                    android:id="@+id/iv_trad_market_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_trad_optional"
+                    android:padding="@dimen/x8"
+                    android:src="@drawable/transaction_icon_kline" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bffffff_13151a"
+            android:rotation="180"
+            android:src="@drawable/bg_shadow" />
+
+        <com.utex.widget.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableLoadMore="false">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/tard_horizontal"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y26_5"
+                        android:layout_marginTop="@dimen/y6"
+                        android:background="@color/bffffff_13151a">
+
+                        <View
+                            android:layout_width="@dimen/x3_5"
+                            android:layout_height="@dimen/y9_5"
+                            android:layout_centerVertical="true"
+                            android:background="@color/f398155"/>
+
+                        <TextView
+                            style="@style/textBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x13"
+                            android:text="@string/dang_qian_wei_tuo"
+                            android:textColor="@color/b333333_e6ffffff"
+                            android:textSize="@dimen/x15_5" />
+
+                        <TextView
+                            android:id="@+id/tv_trad_all_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/x13"
+                            android:drawablePadding="@dimen/x3"
+                            android:drawableRight="@drawable/icon_more"
+                            android:text="@string/quan_bu_ji_lu"
+                            android:textColor="@color/b999999_66ffffff"
+                            android:textSize="@dimen/x10_5" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_trad_cur_entrust_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_trad_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bffffff_13151a">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/pic_none_zwjl" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/y5"
+                            android:text="@string/zan_wu_xiang_guan_ji_lu"
+                            android:textColor="@color/bc8ccc9_33ffffff"
+                            android:layout_below="@+id/img"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="@dimen/x12" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </com.utex.widget.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+    <!-- 左侧滑动栏 -->
+    <LinearLayout
+        android:id="@+id/rl_left_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/bffffff_13151a"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_trad_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/y16"
+            android:paddingBottom="@dimen/y4"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+            android:paddingTop="@dimen/y4"
+            android:src="@drawable/transaction_icon_collapse" />
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/mi_trad_left_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y26_5">
+
+        </net.lucode.hackware.magicindicator.MagicIndicator>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/be3e6e4_29ffffff" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_trad_left_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

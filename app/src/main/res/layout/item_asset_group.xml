@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_asset_group_parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y44"
+    android:background="@color/bffffff_13151a">
+
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x13"
+        android:text="USDT"
+        android:textColor="@color/f398155"
+        android:textSize="@dimen/x15_5" />
+
+    <TextView
+        android:id="@+id/tv_group_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x85_5"
+        android:lineSpacingExtra="@dimen/y6_5"
+        android:text="0.373 \n 221"
+        android:textColor="@color/b666666_99ffffff"
+        android:textSize="@dimen/x12" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x42_5"
+        android:drawablePadding="@dimen/x8_5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_group_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:lineSpacingExtra="@dimen/y4_5"
+            android:text="0.373 可用"
+            android:textColor="@color/b666666_99ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_group_frozen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_group_available"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/y3"
+            android:drawablePadding="@dimen/x8_5"
+            android:text="0.373 可用"
+            android:textColor="@color/b666666_99ffffff"
+            android:textSize="@dimen/x12" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x20_5"
+        android:src="@drawable/property_icon_more" />
+
+    <View
+        android:id="@+id/group_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginRight="@dimen/x13"
+        android:background="@color/be3e6e4_29ffffff"/>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y48"
+    android:layout_marginLeft="@dimen/x8_5"
+    android:layout_marginTop="@dimen/y6"
+    android:layout_marginRight="@dimen/x8_5"
+    android:background="@color/bffffff_13151a">
+
+    <TextView
+        android:id="@+id/tv_distribute_record_title"
+        android:layout_width="@dimen/x160"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginTop="@dimen/y12"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="糖果"
+        android:textColor="@color/b333333_b2ffffff"
+        android:textSize="@dimen/x13_5" />
+
+    <TextView
+        android:id="@+id/tv_distribute_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_distribute_record_title"
+        android:layout_marginLeft="@dimen/x13"
+        android:layout_marginTop="@dimen/y6"
+        android:text="2018-8-30 16:00"
+        android:textColor="@color/b999999_66ffffff"
+        android:textSize="@dimen/x10" />
+
+    <TextView
+        android:id="@+id/tv_distribute_record_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/y12"
+        android:layout_marginRight="@dimen/x13"
+        android:text="糖果"
+        android:textColor="@color/b398155_33ffffff"
+        android:textSize="@dimen/x13_5" />
+
+
+    <TextView
+        android:id="@+id/tv_distribute_record_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_distribute_record_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/y6"
+        android:layout_marginRight="@dimen/x13"
+        android:text="ardo"
+        android:textColor="@color/b999999_66ffffff"
+        android:textSize="@dimen/x10" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y16_5"
+    android:background="@color/bffffff_13151a">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x8"
+        android:text="12.0321"
+        android:textColor="@color/fee6a5e"
+        android:textSize="@dimen/x10_5" />
+
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x13"
+        android:text="1"
+        android:textColor="@color/fee6a5e"
+        android:textSize="@dimen/x10_5" />
+
+    <TextView
+        android:id="@id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x44_5"
+        android:text="1K"
+        android:textColor="@color/b666666_99ffffff"
+        android:textSize="@dimen/x10_5" />
+
+    <ProgressBar
+        android:id="@+id/pb_market_bg"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        android:minHeight="100dp"
+        android:progressDrawable="@drawable/bid_cat_bg"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

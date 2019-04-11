@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_market_body_parent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/bffffff_13151a">
+
+        <TextView
+            android:id="@+id/tv_ticker_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginTop="@dimen/y9"
+            android:textColor="@color/b2a2a2a_ffffff"
+            android:textSize="@dimen/x13_5" />
+
+        <TextView
+            android:id="@+id/tv_makret_body_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ticker_code"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginTop="@dimen/y3"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x9_5" />
+
+        <TextView
+            android:id="@+id/tv_market_defalue_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x136_5"
+            android:layout_marginTop="@dimen/y9"
+            android:textColor="@color/b333333_e6ffffff"
+            android:textSize="@dimen/x13_5" />
+
+        <TextView
+            android:id="@+id/tv_market_platform_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_market_defalue_price"
+            android:layout_marginLeft="@dimen/x136_5"
+            android:layout_marginTop="@dimen/y3"
+            android:textColor="@color/b999999_66ffffff"
+            android:textSize="@dimen/x9_5" />
+
+        <TextView
+            android:id="@+id/tv_market_body_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_market_defalue_price"
+            android:layout_marginRight="@dimen/x13"
+            android:background="@drawable/shape_market_body_down_bg"
+            android:paddingBottom="@dimen/y3"
+            android:paddingLeft="@dimen/x5_5"
+            android:paddingRight="@dimen/x5_5"
+            android:paddingTop="@dimen/y3"
+            android:textColor="@color/fffffff"
+            android:textSize="@dimen/x12" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_market_2_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y34"
+        android:background="@color/bffffff_13151a">
+
+        <TextView
+            android:id="@+id/tv_market_coin_name"
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x9"
+            android:textColor="@color/b333333_e6ffffff"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_market_price"
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x88"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_market_rate"
+            style="@style/textBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x9"
+            android:textSize="@dimen/x13" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/x8_5"
+            android:layout_marginRight="@dimen/x8_5"
+            android:alpha="0.3"
+            android:background="@color/b40e3e6e4_29ffffff" />
+
+    </RelativeLayout>
+</RelativeLayout>

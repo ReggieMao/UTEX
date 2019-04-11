@@ -1,0 +1,185 @@
+10
+
+dir
+707
+svn://47.93.220.40:9999/%E9%A1%B9%E7%9B%AE%E5%88%97%E8%A1%A8/UTEX/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/UTEX/app/src/main/res
+svn://47.93.220.40:9999/%E9%A1%B9%E7%9B%AE%E5%88%97%E8%A1%A8
+
+
+
+2019-02-19T03:18:14.670918Z
+707
+maolj
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c6f38672-43b5-43a3-be75-a90310bde57d
+
+
+
+
+
+
+0
+
+anim
+dir
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-night-hdpi
+dir
+
+drawable-night-xhdpi
+dir
+
+drawable-night-xxhdpi
+dir
+
+drawable-night-xxxhdpi
+dir
+
+drawable-xhdpi
+dir
+
+drawable-xxhdpi
+dir
+
+drawable-xxxhdpi
+dir
+
+layout
+dir
+
+mipmap-hdpi
+dir
+
+mipmap-ldpi
+dir
+
+mipmap-mdpi
+dir
+
+mipmap-xhdpi
+dir
+
+mipmap-xxhdpi
+dir
+
+mipmap-xxxhdpi
+dir
+
+values
+dir
+
+values-1024x600
+dir
+
+values-1024x768
+dir
+
+values-1184x720
+dir
+
+values-1196x720
+dir
+
+values-1280x720
+dir
+
+values-1280x800
+dir
+
+values-1334x750
+dir
+
+values-1776x1080
+dir
+
+values-1794x1080
+dir
+
+values-1800x1080
+dir
+
+values-1812x1080
+dir
+
+values-1920x1080
+dir
+
+values-2030x1080
+dir
+
+values-2048x1536
+dir
+
+values-2076x1080
+dir
+
+values-2094x1080
+dir
+
+values-2160x1080
+dir
+
+values-2416x1440
+dir
+
+values-2434x1440
+dir
+
+values-2560x1440
+dir
+
+values-2560x1600
+dir
+
+values-2960x1440
+dir
+
+values-400x320
+dir
+
+values-480x320
+dir
+
+values-667x375
+dir
+
+values-800x480
+dir
+
+values-854x480
+dir
+
+values-960x540
+dir
+
+values-en-rUS
+dir
+
+values-night
+dir
+
+values-zh-rCN
+dir
+
+values-zh-rTW
+dir
+
